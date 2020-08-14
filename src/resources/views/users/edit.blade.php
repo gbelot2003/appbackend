@@ -19,6 +19,7 @@
         <div>
             @if($errors)
                 {{ $errors }}
+                {{ $user->user_status  }}
             @endif
         </div>
 
@@ -90,8 +91,11 @@
                 <div class="row">
                     <div class="col-md-12 mb-4">
                         <label for="chkToggle2">{{ __('Status') }}</label>
-                        <input id="chkToggle2" name="user_status" type="checkbox" data-on="Active" data-off="Inactive"
-                                {{ $user->user_status === 1 ? 'checked' : '' }}
+                        <input id="chkToggle2" name="user_status" type="checkbox"
+                               data-on="Active"
+                               data-off="Inactive"
+                               {{ $user->user_status !== 1 ? '' : 'checked' }}
+                               value="{{ $user->user_status !== 1 ? 2 : 1 }}"
                                data-toggle="toggle" data-width="100">
                     </div>
                 </div>

@@ -157,6 +157,19 @@ class UsersTest extends TestCase
 
         $responce->assertSessionHasErrors('phonefield');
     }
+
+    /** @test */
+    public function an_admin_can_change_state_of_user()
+    {
+        // El usuario esta desactivado
+        $u2edit = factory(User::class)->create(['user_status' => 'false']);
+
+        $responce = $this->actingAs($this->admin)
+            ->put('/users/' . $u2edit->id, $this->validFields(['user_status' => true]));
+
+        // luego del update, el usuario esta activado
+        $this->assertEquals($u2edit->user_status, true);
+    }
 }
 
 

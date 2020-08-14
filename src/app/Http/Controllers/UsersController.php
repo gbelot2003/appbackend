@@ -47,6 +47,8 @@ class UsersController extends Controller
 
         $request = $this->PasswordRecongnition($request);
 
+
+
         $user->update($request->validate(
             [
                 'name'          => 'required|string|max:255',
