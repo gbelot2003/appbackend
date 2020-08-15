@@ -16,13 +16,6 @@
             <h6 class="m-0 font-weight-bold text-primary">{{ __('Updating') }} {{ $user->name }} {{ __('info') }}</h6>
         </div>
 
-        <div>
-            @if($errors)
-                {{ $errors }}
-                {{ $user->user_status  }}
-            @endif
-        </div>
-
         <div class="card-body">
             <form action="/users/{{ $user->id }}" method="POST">
                 @csrf
@@ -33,6 +26,11 @@
                             <label class="form-label">{{ __('Name') }}</label>
                             <input type="text" class="form-control" name="name" placeholder="Full Name"
                                    value="{{ $user->name }}">
+                            @error('name')
+                                <div class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
                         </div>
                     </div>
 
@@ -41,6 +39,11 @@
                             <label class="form-label">{{ __('Mobile') }}</label>
                             <input type="text" class="form-control " name="phonefield" placeholder="Mobile"
                                    value="{{ $user->phonefield }}">
+                            @error('phonefield')
+                                <div class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -51,15 +54,20 @@
                             <label class="form-label">{{ __('Email') }}</label>
                             <input type="email" class="form-control" name="email" placeholder="E-Mail"
                                    value="{{ $user->email }}">
+                            @error('email')
+                                <div class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="mb-4 py-3 pl-2 bg-gray-100 border-left-primary">Esta sección es para cambiar
-                            manualmente el Password del
-                            ususario, manejese con cuidado!!</p>
+                        <p class="mb-4 py-3 pl-2 bg-gray-100 border-left-primary">
+                            {{ __("This section is for manually modified the user's password, please, Handle with much care!!") }}
+                        </p>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group mb-4">
@@ -72,11 +80,24 @@
                             <label class="form-label">{{ __('Password Confirmation') }}</label>
                             <input id="password_confirmation" type="password" name="password_confirmation"
                                    class="form-control">
+                            @error('password')
+                                <div class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                            @enderror
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
+
+                    <div class="col-md-12">
+                        <p class="mb-4 py-3 pl-2 bg-gray-100 border-left-danger">
+                            {{ __("This section is for manually modified the user's status and rol, please, Handle with much care!!") }}
+                        </p>
+
+                    </div>
+
                     <div class="col-md-6">
                         <select class="form-control mb-4" name="role_id">
                             @foreach ($roles as $key => $rol)
@@ -87,6 +108,7 @@
 
                         </select>
                     </div>
+
                     <div class="col-md-6 mb-4">
                         <label for="chkToggle2">{{ __('Status') }}</label>
                         <input id="chkToggle2" name="user_status" type="checkbox"
