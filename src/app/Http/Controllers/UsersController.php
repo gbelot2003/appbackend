@@ -44,6 +44,13 @@ class UsersController extends Controller
 
     public function update($id, Request $request)
     {
+        /**
+         * TODO:
+         * Se necesitan agregar envio de email si la cuenta es suspendida
+         * Envio de email si la cuenta cambia de estado de rol
+         * Envio de correo si la cuenta es manualmente modificada por administrador
+         * o supervisor
+         */
 
         $user = User::findOrFail($id);
 

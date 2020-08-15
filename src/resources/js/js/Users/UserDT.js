@@ -10,7 +10,7 @@ $(document).ready( function () {
         ajax: "/users",
         "order": [[0, "desc"]],
         "createdRow":function (row, data, dataIndex) {
-        if (data['user_status'] == 2) {
+        if (data['user_status'] == 0) {
             $(row).addClass('alert-info');
         }
     },
