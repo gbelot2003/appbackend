@@ -25,6 +25,7 @@
                     @include('layouts.admin.heading', ['title'])
 
                     @yield('labels')
+                    @include('flash::message')
 
                     @yield('content')
 

@@ -67,6 +67,8 @@ class UsersController extends Controller
 
         $user->syncRoles($request->get('role_id'));
 
+        flash('The User has been updated...!!')->success();
+
         return redirect()->to('/users');
     }
 
