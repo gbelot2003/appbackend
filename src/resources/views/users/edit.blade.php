@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <select class="form-control mb-4" name="role_id">
                             @foreach ($roles as $key => $rol)
                                 <option value="{{ $rol->id }}"  {{ $user->roles->contains($rol->id) ? 'selected' : '' }}>
@@ -87,15 +87,13 @@
 
                         </select>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 mb-4">
+                    <div class="col-md-6 mb-4">
                         <label for="chkToggle2">{{ __('Status') }}</label>
                         <input id="chkToggle2" name="user_status" type="checkbox"
                                data-on="Active"
                                data-off="Inactive"
-                               {{ $user->user_status !== 1 ? '' : 'checked' }}
-                               value="{{ $user->user_status !== 1 ? 2 : 1 }}"
+                               {{ $user->user_status == 1 ? 'checked' : '' }}
+                               value="{{ $user->user_status == 1 ? 1 : 0 }}"
                                data-toggle="toggle" data-width="100">
                     </div>
                 </div>

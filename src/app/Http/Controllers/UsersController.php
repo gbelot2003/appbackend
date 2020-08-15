@@ -33,8 +33,9 @@ class UsersController extends Controller
     }
 
 
-    public function edit(User $user)
+    public function edit($id)
     {
+        $user = User::findOrFail($id);
         $title = $user->name;
         $roles = Roles::all();
         return view('users.edit', compact('user', 'title', 'roles'));
@@ -43,18 +44,24 @@ class UsersController extends Controller
 
     public function update($id, Request $request)
     {
+
         $user = User::findOrFail($id);
 
         $request = $this->PasswordRecongnition($request);
 
-
+        // Necesitamos el valor de User Status
+        if (!$request->has('user_status')){
+            $request['user_status'] = 0;
+        } else {
+            $request['user_status'] = 1;
+        }
 
         $user->update($request->validate(
             [
                 'name'          => 'required|string|max:255',
                 'email'         => 'required|email|unique:users,email,'.$user->id,
                 'phonefield'    => 'required',
-                'user_status'   => 'nullable'
+                'user_status'   => 'required'
             ]
         ));
 

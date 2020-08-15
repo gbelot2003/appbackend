@@ -51,7 +51,7 @@ class AuditTest extends TestCase
     }
 
     /** @test */
-    public function a_Supervisor_user_can_access_audit()
+    public function a_supervisor_user_can_access_audit()
     {
         $user = factory(User::class)->create();
         $user->assignRole('Supervisor');
