@@ -20,7 +20,9 @@
             </div>
 
             <div class="card-body">
-
+                <div>
+                    <input type="hidden" id="editNumber" value="{{ $role->id }}">
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group mb-4">
@@ -38,17 +40,18 @@
 
                     <div class="col-md-6">
                         <h5>{{ __('Users List') }}</h5>
-                        <div class="list-group">
-                            @foreach($role->users as $user)
-                            <a href="/users/{{ $user->id  }}/edit" class="list-group-item list-group-item-action">{{ $user->name }}</a>
-                            @endforeach
-                        </div>
+                        <table id="users_role_table" class="table">
+                               <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>{{ __('Name') }} </th>
+                                    <th>{{ __('Since') }}</th>
+                                </tr>
+                               </thead>
+                        </table>
                     </div>
                 </div>
             </div>
         </form>
     </div>
-    <style>
-
-    </style>
 @stop

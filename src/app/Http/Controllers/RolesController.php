@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Permissions;
 use App\Roles;
+use App\User;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
 
 class RolesController extends Controller
 {
@@ -34,6 +36,16 @@ class RolesController extends Controller
     public function edit($id)
     {
         $role = Roles::findOrFail($id);
+
+        if (request()->ajax()) {
+            $users = User::whereHas('roles', function ($q) use ($role) {
+                $q->whereIn('name', [$role->name]);
+            })->get();
+
+            return dataTables::of($users)->make(true);
+
+        }
+
         $title = $role->name;
         $perms = Permissions::pluck('name', 'id');
         return View('roles.edit', compact('role', 'title', 'perms'));
