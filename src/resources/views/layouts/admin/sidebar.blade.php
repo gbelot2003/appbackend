@@ -41,7 +41,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">{{ __('User & Permissions') }}:</h6>
                         <a class="collapse-item {{ Request::is('users') ? 'active' : '' }}" href="/users">{{ __('Users List') }}</a>
-                        <a class="collapse-item {{ Request::is('roles') ? 'active' : '' }}" href="/roles">{{ __('Roles List') }}</a>
+                        <a class="collapse-item {{ Request::is('roles') ? 'active' : '' }}" href="/roles">{{ __('Roles & Permissions') }}</a>
                     </div>
                 </div>
             </li>

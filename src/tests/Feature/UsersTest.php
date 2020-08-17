@@ -113,7 +113,7 @@ class UsersTest extends TestCase
         // Creamos al usuaro a ver
         $user2see = factory(User::class)->create();
 
-        // Damos permisos al usuario
+        // Damos permisos de administrador
         $user->assignRole('Administrator');
 
         // Abrimos con permisos
@@ -121,7 +121,6 @@ class UsersTest extends TestCase
             ->get('/users/' . $user2see->id . '/edit')
             ->assertStatus(200)
             ->assertSee($user2see->name);
-
     }
 
     /** @test */
@@ -133,7 +132,6 @@ class UsersTest extends TestCase
             ->put('/users/' . $u2edit->id, $this->validFields(['name' => null]));
 
         $responce->assertSessionHasErrors('name');
-
     }
 
     /** @test */
@@ -171,27 +169,3 @@ class UsersTest extends TestCase
         $this->assertEquals($u2edit->user_status, true);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
