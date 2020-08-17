@@ -26,6 +26,7 @@ try {
 
 // Se define fuera del try
 require('bootstrap4-toggle');
+require('select2');
 
 
 /**

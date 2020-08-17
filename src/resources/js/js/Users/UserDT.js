@@ -4,6 +4,8 @@ $(document).ready( function () {
 
     $('#chkToggle2').bootstrapToggle();
 
+    $('#permselect').select2();
+
     $('#laravel_datatable').DataTable({
         processing: true,
         serverSide: true,

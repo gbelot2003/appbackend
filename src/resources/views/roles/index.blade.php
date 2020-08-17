@@ -4,7 +4,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-            <li class="breadcrumb-item active"><a href="/roles">{{ __('Roles & Permissions') }}</a></li>
+            <li class="breadcrumb-item active">{{ __('Roles & Permissions') }}</li>
         </ol>
     </nav>
 @stop
@@ -17,7 +17,7 @@
         <div class="card-body">
             <div class="list-group">
                 @foreach($roles as $role)
-                <a href="/roles/{{ $role->id }}" class="list-group-item list-group-item-action">
+                <a href="/roles/{{ $role->id }}/edit" class="list-group-item list-group-item-action">
                     {{ $role->name }}
                 </a>
                 @endforeach
