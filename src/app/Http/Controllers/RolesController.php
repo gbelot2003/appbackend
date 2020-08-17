@@ -20,6 +20,8 @@ class RolesController extends Controller
      */
     public function index()
     {
+        //TODO: Listado con busqueda de usuarios o un
+        // datatable
         $roles = Roles::all();
         $title = 'Roles & Permissions';
         return View('roles.index', compact('roles', 'title'));
