@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Audit;
 
+use Acme\Http\Controllers\AuditDataTableController;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
@@ -20,17 +21,15 @@ class AuditController extends Controller
     public function index(Request $request)
     {
         if($request->ajax()) {
-            $audit =  DB::table('audits')->select('audits.id', 'audits.updated_at',
-                 'audits.event', 'audits.auditable_type', 'audits.old_values', 'audits.new_values', 'audits.url',
-                'audits.ip_address', 'audits.user_agent', 'audits.tags', 'users.name as name')
-            ->leftJoin('users', 'audits.user_id', '=', 'users.id');
-
-            return dataTables::of($audit)->make(true);
+            $table = new AuditDataTableController();
+            return $table->AuditDataTable();
         }
 
         $title = 'Audit Logs';
         return View('audits.index', compact('title'));
     }
+
+
 
 
 }

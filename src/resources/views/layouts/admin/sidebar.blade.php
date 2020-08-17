@@ -33,7 +33,7 @@
                     <i class="fas fa-fw fa-cog"></i>
                     <span>{{ __('Users and Security') }}</span>
                 </a>
-                @if(Request::is('users') || Request::is('permissions'))
+                @if(Request::is('users') || Request::is('users/*') || Request::is('roles') || Request::is('roles/*'))
                     <!-- {{ $usuarios = 'tr' }} -->
                 @endif
 
