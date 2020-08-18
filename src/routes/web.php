@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth', 'verified'], function () {
 
         Route::get('/home', 'HomeController@index')->name('home');
 
-        Route::get('/profile', 'ProfileCOntroller@index');
+        Route::get('/profile', 'ProfileController@index');
 
         Route::resource('users', 'UsersController');
 
