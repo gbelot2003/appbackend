@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Acme\Http\Controllers\RolesEditController;
 use App\Permissions;
 use App\Roles;
 use App\User;
@@ -38,12 +39,8 @@ class RolesController extends Controller
         $role = Roles::findOrFail($id);
 
         if (request()->ajax()) {
-            $users = User::whereHas('roles', function ($q) use ($role) {
-                $q->whereIn('name', [$role->name]);
-            })->get();
-
-            return dataTables::of($users)->make(true);
-
+            $table = new RolesEditController();
+            return $table->RolesEditDataTable($role);
         }
 
         $title = $role->name;
@@ -64,4 +61,6 @@ class RolesController extends Controller
         flash('The Rol has been updated!!');
         return response()->redirectTo('/roles');
     }
+
+
 }
