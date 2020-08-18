@@ -16,6 +16,7 @@ class AuditController extends Controller
     {
         $this->middleware('auth');
         $this->middleware(['role:Administrator|Supervisor']);
+        $this->middleware('checkstatus');
     }
 
     public function index(Request $request)

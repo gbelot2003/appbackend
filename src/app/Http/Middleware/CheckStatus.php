@@ -18,9 +18,11 @@ class CheckStatus
     {
         $response = $next($request);
         //If the status is not approved redirect to login
-        if(Auth::check() && Auth::user()->user_status != true){
+        if(Auth::user()->user_status !== true){
             Auth::logout();
+            flash('Error, User invalid');
             return redirect('/login')->with('erro_login', 'Su usuario esta de baja');
         }
-        return $response;    }
+        return $response;
+    }
 }
