@@ -72,7 +72,7 @@ class RegisterController extends Controller
             'slug' => ucfirst($data['name']),
             'password' => Hash::make($data['password']),
             'phonefield' => $data['phonefield'],
-            'user_status' => 0
+            'user_status' => 1
         ]);
 
         $user->assignRole($data['role']);
