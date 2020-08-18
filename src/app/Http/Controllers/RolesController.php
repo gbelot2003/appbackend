@@ -14,9 +14,7 @@ class RolesController extends Controller
     public function __construct()
     {
         // Definimos permisos de ingreso
-        $this->middleware('auth');
         $this->middleware(['role:Administrator|Supervisor']);
-        $this->middleware('checkstatus');
     }
 
     /**
