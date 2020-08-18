@@ -21,6 +21,8 @@ class PermissionsTableSeeder extends Seeder
             // Permisos de administrador
             'ver usuarios', 'crear usuarios', 'editar usuarios', 'suspender usuarios',
             'ver roles', 'crear roles', 'editar roles', 'suspender roles',
+            'ver settings', 'ver propio perfil', 'editar pefil propio', 'editar pefil otros',
+            'ver perfil otros' ,'ver audits'
         ];
 
 
