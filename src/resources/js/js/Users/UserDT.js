@@ -2,8 +2,10 @@ $(document).ready( function () {
 
     $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
 
+    //TODO:Cambiar el selector
     $('#chkToggle2').bootstrapToggle();
 
+    //TODO: mover a parmisos
     $('#permselect').select2();
 
     $('#laravel_datatable').DataTable({

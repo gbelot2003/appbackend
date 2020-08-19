@@ -1,5 +1,8 @@
 <div class="card">
-    <img src="{{ Avatar::create(auth()->user()->email)->toBase64() }}" class="card-img-top" alt="img">
+    <div class="image p-1" style="width:50%;">
+        <img src="{{ Avatar::create(auth()->user()->email)->toBase64() }}" class="card-img-top" alt="img">
+    </div>
+
     <div class="card-body">
         <h5 class="card-title">{{ $user->name }}</h5>
         <small>{{ __('About Me') }}</small>
