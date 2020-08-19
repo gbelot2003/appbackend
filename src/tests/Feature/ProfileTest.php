@@ -34,4 +34,6 @@ class ProfileTest extends TestCase
         // creamos un usuario para editar
         $this->user2edit = factory(User::class)->create();
     }
+
+
 }

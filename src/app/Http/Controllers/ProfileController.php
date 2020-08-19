@@ -8,10 +8,24 @@ use Illuminate\Support\Facades\Auth;
 class ProfileController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware(['permission:ver propio perfil']);
+    }
+
+
     public function index()
     {
         $user = Auth::user();
         $title = 'Profile';
         return View('profile.index', compact('user', 'title'));
+    }
+
+    public function edit()
+    {
+        $user = Auth::user();
+        $title = 'Profile';
+
+        return View('profile.edit', compact('user', 'title'));
     }
 }

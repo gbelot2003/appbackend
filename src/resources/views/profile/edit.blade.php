@@ -19,7 +19,7 @@
             <div class="card text-center">
                 @include('profile._tabs')
                 <div class="card-body">
-                    @include('profile._activities')
+                    @include('profile._form')
                 </div>
             </div>
 

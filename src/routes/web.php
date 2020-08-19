@@ -17,6 +17,7 @@ Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => 'auth', 'verified'], function () {
     Route::group(['middleware' => 'checkstatus'], function(){
+
         Route::get('/', function () {
             return response()->redirectTo('/home');
         });
@@ -24,6 +25,10 @@ Route::group(['middleware' => 'auth', 'verified'], function () {
         Route::get('/home', 'HomeController@index')->name('home');
 
         Route::get('/profile', 'ProfileController@index');
+
+        //Edit own profile
+        Route::get('/profile/edit', 'ProfileController@edit');
+
 
         Route::resource('users', 'UsersController');
 
