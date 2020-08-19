@@ -10,7 +10,8 @@ class ProfileController extends Controller
 
     public function __construct()
     {
-        $this->middleware(['permission:ver propio perfil']);
+        $this->middleware(['permission:ver_perfil_propio'])->only(['index']);
+        $this->middleware(['permission:editar_perfil_propio'])->only(['edit']);
     }
 
 

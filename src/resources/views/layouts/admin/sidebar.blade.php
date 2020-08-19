@@ -24,7 +24,7 @@
 
 
     <!-- Nav Item - Pages Collapse Menu -->
-@if(auth()->user()->can('ver usuarios') || auth()->user()->can('ver roles'))
+@if(auth()->user()->can('ver_usuarios') || auth()->user()->can('ver_roles'))
 
     <!-- Heading -->
         <div class="sidebar-heading">
@@ -45,11 +45,11 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">{{ __('User & Permissions') }}:</h6>
-                    @can('ver usuarios')
+                    @can('ver_usuarios')
                         <a class="collapse-item {{ Request::is('users') ? 'active' : '' }}"
                            href="/users">{{ __('Users List') }}</a>
                     @endcan
-                    @can('ver roles')
+                    @can('ver_roles')
                         <a class="collapse-item {{ Request::is('roles') ? 'active' : '' }}"
                            href="/roles">{{ __('Roles & Permissions') }}</a>
                     @endcan

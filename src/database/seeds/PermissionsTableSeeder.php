@@ -19,10 +19,10 @@ class PermissionsTableSeeder extends Seeder
 
         $permissions = [
             // Permisos de administrador
-            'ver usuarios', 'crear usuarios', 'editar usuarios', 'suspender usuarios',
-            'ver roles', 'crear roles', 'editar roles', 'suspender roles',
-            'ver settings', 'ver propio perfil', 'editar pefil propio', 'editar pefil otros',
-            'ver perfil otros' ,'ver audits'
+            'ver_usuarios', 'crear_usuarios', 'editar_usuarios', 'suspender_usuarios',
+            'ver_roles', 'crear_roles', 'editar_roles', 'suspender_roles',
+            'ver_settings', 'ver_perfil_propio', 'editar_perfil_propio', 'editar_perfil_otros',
+            'ver_perfil_otros' ,'ver_audits'
         ];
 
 
