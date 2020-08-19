@@ -20,7 +20,7 @@ pipeline{
         }
         stage("Instalando Paquetes Compose"){
             steps{
-                sh "docker-compose run --rm composer install"
+                sh "docker-compose run --rm php composer install"
                 sh "docker-compose run --rm artisan cache:clear"
             }
         }
