@@ -25,3 +25,4 @@
     </div>
 </fieldset>
 
+<div class="dropdown-divider"></div>

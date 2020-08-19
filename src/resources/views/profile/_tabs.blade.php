@@ -7,7 +7,7 @@
         @endcan
          @can('editar_perfil_propio')
         <li class="nav-item">
-            <a class="nav-link {{ Request::is('profile/edit') ? 'active' : '' }}" href="/profile/edit">{{ __('My Profile Info') }}</a>
+            <a class="nav-link {{ Request::is('profile/edit') ? 'active' : '' }}" href="/profile/edit">{{ __('My Profile') }}</a>
         </li>
         @endcan
     </ul>
