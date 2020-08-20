@@ -22,9 +22,7 @@ class CreateCountriesTable extends Migration
             $table->string('capital', 255);
             $table->string('currency', 255);
             $table->string('native', 255);
-            $table->string('emoji', 191);
-            $table->tinyInteger('flag');
-            $table->string('wikiDataId', 255);
+            $table->string('wikiDataId', 255)->nullable();
             $table->timestamps();
         });
 

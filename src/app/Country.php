@@ -8,5 +8,5 @@ class Country extends Model
 {
 
     protected $fillable = ['id', 'name', 'iso3', 'iso2', 'phonecode', 'capital', 'currency',
-                            'native', 'emoji', 'emojiU', 'flag', 'wikiDataId'];
+                            'native', 'wikiDataId'];
 }
