@@ -54,7 +54,6 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'phonefield' => ['required', 'unique:users'],
-            'role' => ['required'],
         ]);
     }
 
@@ -74,8 +73,6 @@ class RegisterController extends Controller
             'phonefield' => $data['phonefield'],
             'user_status' => 1
         ]);
-
-        $user->assignRole($data['role']);
 
         return $user;
     }

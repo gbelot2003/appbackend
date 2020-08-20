@@ -67,7 +67,6 @@ class UsersTest extends TestCase
             'password' => 'NoTienePassword01',
             'password_confirmation' => 'NoTienePassword01',
             'phonefield' => '(504) 480-4255',
-            'role' => 'Subscriber'
         ];
 
         $response = $this->post('/register', $user)
