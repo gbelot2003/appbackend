@@ -66,7 +66,8 @@ class UsersTest extends TestCase
             'email' => 'user@emai.com',
             'password' => 'NoTienePassword01',
             'password_confirmation' => 'NoTienePassword01',
-            'phonefield' => '(504) 480-4255',
+            'phonefield' => '4480-4255',
+            'country_code' => '+504'
         ];
 
         $response = $this->post('/register', $user)

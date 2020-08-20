@@ -7,6 +7,7 @@ $(document).ready( function () {
 
     //TODO: mover a parmisos
     $('#permselect').select2();
+    $('#country_code').select2();
 
     $('#laravel_datatable').DataTable({
         processing: true,

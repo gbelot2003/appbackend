@@ -25,6 +25,32 @@
 
                                 </div>
                                 <div class="col-sm-6">
+                                    <input type="email" name="email" class="form-control form-control-user"
+                                           id="email" placeholder="Email Address">
+                                    @error('email')
+                                    <div class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="form-group  row">
+                                <div class="col-md-3">
+                                    <select name="country_code" id="country_code" class="form-control">
+                                        <option value="+504">+504</option>
+                                        <option value="+501">+501</option>
+                                        <option value="+502">+502</option>
+                                        <option value="+503">+503</option>
+                                        <option value="+505">+505</option>
+                                        <option value="+506">+506</option>
+                                        <option value="+507">+507</option>
+                                        <option value="+52">+52</option>
+                                        <option value="+1">+1</option>
+                                    </select>
+                                    <small id="country_label" class="text-muted">Honduras</small>
+                                </div>
+                                <div class="col-md-9">
                                     <input type="text" name="phonefield" class="form-control form-control-user"
                                            id="phonefield" placeholder="{{ __('Phone Number') }}">
                                     @error('phonefield')
@@ -34,15 +60,7 @@
                                     @enderror
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control form-control-user"
-                                       id="email" placeholder="Email Address">
-                                @error('email')
-                                <div class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </div>
-                                @enderror
-                            </div>
+
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <input type="password" name="password" class="form-control form-control-user"

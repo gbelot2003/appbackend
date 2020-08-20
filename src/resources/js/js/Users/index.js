@@ -1,1 +1,2 @@
 require('./UserDT');
+require('./register');
