@@ -42,7 +42,7 @@ class CreateCountriesTable extends Migration
                 ->onDelete('cascade');
         });
 
-        Schema::create('cities', function (Blueprint $table) {
+        /*Schema::create('cities', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
             $table->unsignedBigInteger('state_id')->index();
@@ -64,7 +64,7 @@ class CreateCountriesTable extends Migration
                 ->references('id')
                 ->on('countries')
                 ->onDelete('cascade');;
-        });
+        });*/
 
 
     }
@@ -77,7 +77,7 @@ class CreateCountriesTable extends Migration
     public function down()
     {
 
-        Schema::dropIfExists('cities');
+        //Schema::dropIfExists('cities');
         Schema::dropIfExists('states');
         Schema::dropIfExists('countries');
     }
