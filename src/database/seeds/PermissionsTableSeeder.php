@@ -17,7 +17,7 @@ class PermissionsTableSeeder extends Seeder
         DB::table('model_has_permissions')->delete();
         DB::table('permissions')->delete();
 
-        $permissions = [
+        $permissionsAdmin = [
             // Permisos de administrador
             'ver_usuarios', 'crear_usuarios', 'editar_usuarios', 'suspender_usuarios',
             'ver_roles', 'crear_roles', 'editar_roles', 'suspender_roles',
@@ -26,11 +26,14 @@ class PermissionsTableSeeder extends Seeder
         ];
 
 
-        foreach ($permissions as $permission) {
+        foreach ($permissionsAdmin as $permission) {
             Permission::create(['name' => $permission]);
         }
 
+        $suscriver = Role::findByName('Subscriber');
+        $suscriver->givePermissionTo(['ver_perfil_propio', 'editar_perfil_propio']);
+
         $role = Role::findByName('Administrator');
-        $role->givePermissionTo($permissions);
+        $role->givePermissionTo($permissionsAdmin);
     }
 }

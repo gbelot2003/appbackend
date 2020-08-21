@@ -33,7 +33,42 @@ class ProfileTest extends TestCase
 
         // creamos un usuario para editar
         $this->user2edit = factory(User::class)->create();
+        $this->user2edit->assignRole('Subscriber');
+    }
+
+    /** @test */
+    public function only_auth_users_have_access_to_profile()
+    {
+
+        $res1 = $this->actingAs($this->user2edit)->get('/profile');
+        $res1->assertStatus(200);
+
+
+        // EL admin tiene autorizacion
+        $responce = $this->actingAs($this->admin)->get('/profile');
+        $responce->assertStatus(200);
     }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
