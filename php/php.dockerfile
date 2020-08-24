@@ -8,33 +8,14 @@ ENV MAGICK_HOME=/usr
     RUN  apk --no-cache update \
     && apk --no-cache upgrade \
     && apk add --update \
-    coreutils \
-    freetype-dev \
-    libwebp-dev \
-    libjpeg \
-    libjpeg-turbo \
-    libjpeg-turbo-dev \
-    libzip-dev \
-    jpeg-dev \
-    icu-dev \
-    curl-dev \
-    imap-dev \
-    libxslt-dev libxml2-dev \
-    postgresql-dev \
-    libgcrypt-dev \
-    oniguruma-dev \
-    libpng \
-    libpng-dev \
-    zlib-dev \
-    libxpm-dev \
-    libxml2-dev \
-    gd \
+    coreutils freetype-dev libwebp-dev libjpeg \
+    jpeg-dev libpng-dev libjpeg-turbo libjpeg-turbo-dev \
+    libzip-dev icu-dev curl-dev imap-dev libxslt-dev libxml2-dev \
+    postgresql-dev libgcrypt-dev oniguruma-dev libpng \
+    libpng-dev zlib-dev libxpm-dev libxml2-dev gd \ libjpeg62-turbo-dev \
     autoconf g++ imagemagick-dev imagemagick libtool make
 
-    RUN docker-php-ext-configure gd \
-    --with-freetype \
-    --with-jpeg
-
+    RUN docker-php-ext-configure gd --with-freetype --with-jpeg
     RUN docker-php-ext-configure intl
     RUN docker-php-ext-configure imap
     RUN docker-php-ext-install mbstring
@@ -46,13 +27,8 @@ ENV MAGICK_HOME=/usr
     RUN docker-php-ext-enable imagick
     RUN apk del autoconf g++ libtool make
     RUN docker-php-ext-install -j "$(nproc)" \
-                    gd soap imap bcmath mbstring iconv curl sockets \
-                    opcache \
-                    pdo_pgsql \
-                    xsl \
-                    exif \
-                    mysqli pdo pdo_mysql \
-                    intl \
-                    zip
+        gd soap imap bcmath mbstring iconv curl sockets \
+        opcache pdo_pgsql xsl exif mysqli pdo pdo_mysql \
+        intl zip
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+    COPY --from=composer:latest /usr/bin/composer /usr/bin/composer

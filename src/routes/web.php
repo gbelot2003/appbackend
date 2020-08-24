@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
 
-
 Route::group(['middleware' => 'auth', 'verified'], function () {
     Route::group(['middleware' => 'checkstatus'], function(){
 
