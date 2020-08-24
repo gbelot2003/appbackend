@@ -9,8 +9,8 @@ ENV MAGICK_HOME=/usr
     && apk --no-cache upgrade \
     && apk add --update \
     coreutils freetype-dev libwebp-dev libjpeg \
-    jpeg-dev libpng-dev libjpeg-turbo libjpeg-turbo-dev \
-    libzip-dev icu-dev curl-dev imap-dev libxslt-dev libxml2-dev \
+    jpeg-dev libpng-dev libjpeg-turbo libzip-dev icu-dev \
+    curl-dev imap-dev libxslt-dev libxml2-dev \
     postgresql-dev libgcrypt-dev oniguruma-dev libpng \
     libpng-dev zlib-dev libxpm-dev libxml2-dev gd \ libjpeg62-turbo-dev \
     autoconf g++ imagemagick-dev imagemagick libtool make
