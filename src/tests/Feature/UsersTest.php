@@ -60,6 +60,7 @@ class UsersTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
+        // Info de formulario
         $user = [
             '_token' => csrf_token(),
             'name' => 'User Name',

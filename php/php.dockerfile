@@ -11,6 +11,7 @@ ENV MAGICK_HOME=/usr
     coreutils \
     freetype-dev \
     libwebp-dev \
+    libjpeg \
     libjpeg-turbo \
     libjpeg-turbo-dev \
     libzip-dev \
@@ -30,7 +31,10 @@ ENV MAGICK_HOME=/usr
     gd \
     autoconf g++ imagemagick-dev imagemagick libtool make
 
-    RUN docker-php-ext-configure gd --with-freetype --with-jpeg
+    RUN docker-php-ext-configure gd \
+    --with-freetype \
+    --with-jpeg
+
     RUN docker-php-ext-configure intl
     RUN docker-php-ext-configure imap
     RUN docker-php-ext-install mbstring

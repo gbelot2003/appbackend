@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
 
+
 Route::group(['middleware' => 'auth', 'verified'], function () {
     Route::group(['middleware' => 'checkstatus'], function(){
 
@@ -29,6 +30,7 @@ Route::group(['middleware' => 'auth', 'verified'], function () {
         //Edit own profile
         Route::get('/profile/edit', 'ProfileController@edit');
 
+        Route::post('images/upload', 'CommunsController@image_uploader');
 
         Route::resource('users', 'UsersController');
 
