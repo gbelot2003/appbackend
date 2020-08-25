@@ -51,8 +51,6 @@ class CreateCountriesTable extends Migration
             $table->char('country_code', 2);
             $table->decimal('latitude', 10,8);
             $table->decimal('longitude', 11,8);
-            $table->tinyInteger('flag');
-            $table->string('wikiDataId', 255);
             $table->timestamps();
 
             $table->foreign('state_id')
