@@ -33,8 +33,11 @@ class ImageUploadTest extends TestCase
 
         // creamos un administrador para test
         $this->admin = factory(User::class)->create();
+
+        // creamos perfil de usuario Administrador
         $profiel = factory(Profile::class)->create(['user_id' => $this->admin->id]);
 
+        // Asignamos rol de administrador
         $this->admin->assignRole('Administrator');
 
         // creamos un usuario suscriber para tests
@@ -43,28 +46,30 @@ class ImageUploadTest extends TestCase
     }
 
     /** @test */
-    public function image_upload()
+    public function avatar_upload()
     {
         $this->withoutExceptionHandling();
 
+        // Guardamos el Nombre de imagen
+        $name = "avatar.png";
+
+        // Usaremos el disco local
         Storage::fake('local');
 
+        // Enviarmos el formulario actuando como administrador /images/upload
         $response = $this->actingAs($this->admin)->json('POST', '/images/upload', [
-            'image' => UploadedFile::fake()->image('avatar.png')
+            'image' => UploadedFile::fake()->image($name)
         ]);
 
-        // Assert the file was stored...
-        Storage::disk('local')->assertExists('profiles/avatar.png');
+        // Afirmamos que el archivo se guardo
+        Storage::disk('local')->assertExists("profiles/$name");
 
-        // Assert a file does not exist...
+        // verificamos que la prueba muestra error
         Storage::disk('local')->assertMissing('missing.png');
 
-        // ruta final de avatar
-        $path  ="/storage/app/public/profiles/avatar.png";
 
-        // probamos iguales a db
-        $this->assertEquals($this->admin->profile->avatar, $path);
-
+        // probamos igualdad en base de datos
+        $this->assertEquals($this->admin->profile->avatar, $name);
 
     }
 }

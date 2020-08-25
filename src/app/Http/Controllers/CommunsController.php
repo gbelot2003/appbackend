@@ -35,7 +35,7 @@ class CommunsController extends Controller
         // storage/app/public/profiles/$name;
         $path  ="/storage/app/public/profiles/$name";
 
-        auth()->user()->profile->avatar = ($path);
+        auth()->user()->profile->avatar = ($name);
 
 
         // Devolvemos ??

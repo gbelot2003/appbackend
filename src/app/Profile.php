@@ -19,4 +19,13 @@ class Profile extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * @return string
+     * @internal param $value
+     */
+    public function avatarPath()
+    {
+        return "storage/app/public/profiles/{$this->avatar}";
+    }
 }
