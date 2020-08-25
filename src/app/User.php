@@ -8,8 +8,6 @@ use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 use Laravel\Passport\HasApiTokens;
 use OwenIt\Auditing\Contracts\Auditable;
-use Spatie\Sluggable\HasSlug;
-use Spatie\Sluggable\SlugOptions;
 
 class User extends Authenticatable implements MustVerifyEmail, Auditable
 {
@@ -45,12 +43,11 @@ class User extends Authenticatable implements MustVerifyEmail, Auditable
     ];
 
     /**
-     * Get the options for generating the slug.
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     *
      */
-    public function getSlugOptions() : SlugOptions
+    public function profile()
     {
-        return SlugOptions::create()
-            ->generateSlugsFrom('name')
-            ->saveSlugsTo('slug');
+        return $this->hasOne(Profile::class);
     }
 }
