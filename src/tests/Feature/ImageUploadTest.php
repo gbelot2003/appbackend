@@ -50,26 +50,28 @@ class ImageUploadTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        // Guardamos el Nombre de imagen
-        $name = "avatar.png";
-
         // Usaremos el disco local
         Storage::fake('local');
 
         // Enviarmos el formulario actuando como administrador /images/upload
-        $response = $this->actingAs($this->admin)->json('POST', '/images/upload', [
-            'image' => UploadedFile::fake()->image($name)
+        $response = $this->actingAs($this->admin)->json('POST', '/avatar/upload', [
+            'image' => UploadedFile::fake()->image('avatar.png')
         ]);
 
+        // Necesitamos sanear los backslashes double-cuoute del response
+        $redata = stripslashes(trim($response->content(), '"'));
+
+        // Afirmamos igualdad de salida
+        $this->assertEquals($this->admin->profile->avatarPath(), $redata);
+
+        // Guardamos el Nombre de imagen
+        $name = $this->admin->profile->avatar;
+
         // Afirmamos que el archivo se guardo
-        Storage::disk('local')->assertExists("profiles/$name");
+        Storage::disk('local')->assertExists("$name");
 
         // verificamos que la prueba muestra error
         Storage::disk('local')->assertMissing('missing.png');
-
-
-        // probamos igualdad en base de datos
-        $this->assertEquals($this->admin->profile->avatar, $name);
 
     }
 }

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Acme\Helpers\StoreFilesHelper;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class CommunsController extends Controller
 {
@@ -14,31 +14,34 @@ class CommunsController extends Controller
      */
     function __construct()
     {
+
     }
 
-
-    public function image_uploader(Request $request)
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     *
+     * TODO: Agregar metodo de cambio de avatar en editor de usuarios
+     */
+    public function upload_avatar(Request $request)
     {
         // Validamos la imagen
-        request()->validate([
+        $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:150000',
         ]);
 
-        // Obtenemos el nombre del archivo
-        $name = $request->image->getClientOriginalName();
+        // Guardamos Imagen
+        $upload = new StoreFilesHelper($request);
 
-        // Guardamos la imagen en carpeta profile
-        $storage = $request->file('image')->storeAs(
-            'profiles', $name
-        );
+        // retorna el nombre de imagen;
+        $name = $upload->storeAvatarIn('profiles');
 
-        // storage/app/public/profiles/$name;
-        $path  ="/storage/app/public/profiles/$name";
-
+        // Guardamos en profile User
         auth()->user()->profile->avatar = ($name);
 
-
-        // Devolvemos ??
-        return response($name, 200);
+        $response = (string) auth()->user()->profile->avatarPath();
+        // respondemos
+        return response()->json($response, 200);
     }
+
 }

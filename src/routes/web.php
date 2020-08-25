@@ -29,7 +29,7 @@ Route::group(['middleware' => 'auth', 'verified'], function () {
         //Edit own profile
         Route::get('/profile/edit', 'ProfileController@edit');
 
-        Route::post('images/upload', 'CommunsController@image_uploader');
+        Route::post('avatar/upload', 'CommunsController@upload_avatar');
 
         Route::resource('users', 'UsersController');
 
