@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Profile;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -73,6 +74,10 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'phonefield' => $data['country_code'] . "-" . $data['phonefield'],
             'user_status' => 1
+        ]);
+
+        Profile::create([
+            'user_id' => $user->id
         ]);
 
         return $user;

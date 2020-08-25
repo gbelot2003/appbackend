@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Profile;
 use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -11,8 +12,6 @@ use Tests\TestCase;
 
 class ImageUploadTest extends TestCase
 {
-    use RefreshDatabase, WithFaker;
-
     use RefreshDatabase, WithFaker;
 
     private $users;
@@ -34,6 +33,8 @@ class ImageUploadTest extends TestCase
 
         // creamos un administrador para test
         $this->admin = factory(User::class)->create();
+        $profiel = factory(Profile::class)->create(['user_id' => $this->admin->id]);
+
         $this->admin->assignRole('Administrator');
 
         // creamos un usuario suscriber para tests
@@ -57,5 +58,13 @@ class ImageUploadTest extends TestCase
 
         // Assert a file does not exist...
         Storage::disk('local')->assertMissing('missing.png');
+
+        // ruta final de avatar
+        $path  ="/storage/app/public/profiles/avatar.png";
+
+        // probamos iguales a db
+        $this->assertEquals($this->admin->profile->avatar, $path);
+
+
     }
 }

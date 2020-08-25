@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
 {
-    protected $guarded = [];
+
+    /**
+     * @var array
+     */
+    protected $fillable = ['user_id', 'avatar'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo

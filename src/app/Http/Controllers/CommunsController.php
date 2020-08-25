@@ -28,9 +28,14 @@ class CommunsController extends Controller
         $name = $request->image->getClientOriginalName();
 
         // Guardamos la imagen en carpeta profile
-        $storage = Storage::putFileAs('profiles',  $request->image, $name);
+        $storage = $request->file('image')->storeAs(
+            'profiles', $name
+        );
 
-        //Savamos ruta???
+        // storage/app/public/profiles/$name;
+        $path  ="/storage/app/public/profiles/$name";
+
+        auth()->user()->profile->avatar = ($path);
 
 
         // Devolvemos ??

@@ -19,8 +19,8 @@ class UserTest extends TestCase
 
         $this->withoutExceptionHandling();
 
-        $user = factory(User::class)->create();
-        $profile = factory(Profile::class)->create(['user_id' => $user->id]);
+        $profile = factory(Profile::class)->create();
+        $user = $profile->user;
 
         $this->assertEquals(1, $user->profile()->count());
     }
