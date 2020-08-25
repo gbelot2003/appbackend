@@ -53,7 +53,7 @@ class ImageUploadTest extends TestCase
         ]);
 
         // Assert the file was stored...
-        Storage::disk('local')->assertExists('public/avatar.png');
+        Storage::disk('local')->assertExists('profiles/avatar.png');
 
         // Assert a file does not exist...
         Storage::disk('local')->assertMissing('missing.png');

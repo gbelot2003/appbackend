@@ -18,14 +18,13 @@ class CommunsController extends Controller
 
     public function image_uploader(Request $request)
     {
-
         request()->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:150000',
         ]);
 
         $name = $request->image->getClientOriginalName();
 
-        $path = Storage::putFileAs('public',  $request->image, $name);
+        $storage = Storage::putFileAs('profiles',  $request->image, $name);
 
         return response($name, 200);
     }
