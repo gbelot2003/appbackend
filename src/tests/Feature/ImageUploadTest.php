@@ -14,11 +14,7 @@ class ImageUploadTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
 
-    private $users;
-
-    private $admin;
-
-    private $user2edit;
+    private $user;
 
     protected function setUp(): void
     {
@@ -28,21 +24,14 @@ class ImageUploadTest extends TestCase
         \Artisan::call('migrate', ['-vvv' => true]);
         \Artisan::call('db:seed', ['-vvv' => true]);
 
-        // Creamos una lista de usuarios
-        $this->users = factory(User::class, 20)->create();
+        // creamos un usuario para test
+        $this->user = factory(User::class)->create();
 
-        // creamos un administrador para test
-        $this->admin = factory(User::class)->create();
+        // creamos perfil de usuario
+        $profiel = factory(Profile::class)->create(['user_id' => $this->user->id]);
 
-        // creamos perfil de usuario Administrador
-        $profiel = factory(Profile::class)->create(['user_id' => $this->admin->id]);
-
-        // Asignamos rol de administrador
-        $this->admin->assignRole('Administrator');
-
-        // creamos un usuario suscriber para tests
-        $this->user2edit = factory(User::class)->create();
-        $this->user2edit->assignRole('Subscriber');
+        // Asignamos rol de Subscriber
+        $this->user->assignRole('Subscriber');
     }
 
     /** @test */
@@ -54,7 +43,30 @@ class ImageUploadTest extends TestCase
         Storage::fake('local');
 
         // Enviarmos el formulario actuando como administrador /images/upload
-        $response = $this->actingAs($this->admin)->json('POST', '/avatar/upload', [
+        $response = $this->actingAs($this->user)->json('POST', '/avatar/upload', [
+            'image' => UploadedFile::fake()->image('avatar.png')
+        ]);
+
+        // Guardamos el Nombre de imagen
+        $name = $this->user->profile->avatar;
+
+        // Afirmamos que el archivo se guardo
+        Storage::disk('local')->assertExists("$name");
+
+        // verificamos que la prueba muestra error
+        Storage::disk('local')->assertMissing('missing.png');
+    }
+
+    /** @test */
+    public function response_with_image_path()
+    {
+        $this->withoutExceptionHandling();
+
+        // Usaremos el disco local
+        Storage::fake('local');
+
+        // Enviarmos el formulario actuando como administrador /images/upload
+        $response = $this->actingAs($this->user)->json('POST', '/avatar/upload', [
             'image' => UploadedFile::fake()->image('avatar.png')
         ]);
 
@@ -62,16 +74,7 @@ class ImageUploadTest extends TestCase
         $redata = stripslashes(trim($response->content(), '"'));
 
         // Afirmamos igualdad de salida
-        $this->assertEquals($this->admin->profile->avatarPath(), $redata);
-
-        // Guardamos el Nombre de imagen
-        $name = $this->admin->profile->avatar;
-
-        // Afirmamos que el archivo se guardo
-        Storage::disk('local')->assertExists("$name");
-
-        // verificamos que la prueba muestra error
-        Storage::disk('local')->assertMissing('missing.png');
+        $this->assertEquals($this->user->profile->avatarPath(), $redata);
 
     }
 }
