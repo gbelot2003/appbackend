@@ -14,8 +14,8 @@ pipeline{
         }
         stage("Instalando Paquetes Compose"){
             steps{
-                sh "docker-compose exec php composer install"
-                sh "docker-compose exec php php artisan cache:clear"
+                sh "docker-compose exec -it php php composer install"
+                sh "docker-compose exec -it php php artisan cache:clear"
             }
         }
         stage("Copiando .env y Corriendo migraciones"){
@@ -33,8 +33,8 @@ pipeline{
         }
         stage("Migrando y Seeding Tablas"){
             steps{
-                sh "docker-compose exec php php artisan migrate:refresh --seed"
-                sh "docker-compose exec php php artisan passport:install"
+                sh "docker-compose exec -it php php artisan migrate:refresh --seed"
+                sh "docker-compose exec -it php php artisan passport:install"
             }
         }
         stage("Ejecutando Pruebas Unitarias"){
