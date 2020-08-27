@@ -10,7 +10,6 @@ pipeline{
         stage("Creando entorno Docker"){
             steps{
                 sh "docker-compose up -d --build"
-                sh "sudo chown -R $USER $HOME/.composer"
             }
         }
         stage("Instalando Paquetes Compose"){
