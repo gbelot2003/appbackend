@@ -14,7 +14,7 @@ pipeline{
         }
         stage("Instalando Paquetes Compose"){
             steps{
-                sh "docker-compose exec -T php php composer install"
+                sh "docker-compose exec -T php composer install"
                 sh "docker-compose exec -T php php artisan cache:clear"
             }
         }
