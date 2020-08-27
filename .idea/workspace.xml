@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6d47ffa2-978e-46b0-bfb9-8c380401d82b" name="Default" comment="[Green] Refactory dividimos en 2 test">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Http/Controllers/ProfileController.php" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ProfileController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/migrations/2020_08_20_002724_create_countries_table.php" afterPath="$PROJECT_DIR$/src/database/migrations/2020_08_20_002724_create_countries_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/seeds/CitiesTableSeeder.php" afterPath="$PROJECT_DIR$/src/database/seeds/CitiesTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/web.php" afterPath="$PROJECT_DIR$/src/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/Feature/ProfileTest.php" afterPath="$PROJECT_DIR$/src/tests/Feature/ProfileTest.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="homestead@127.0.0.1" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="homestead@127.0.0.1" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="homestead" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="homestead.states" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/8819d51d/b32d3a32-0a6d-40f8-87e7-179a18ea495a/homestead.states">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Artisan</find>
+      <find>--with-freetype</find>
+      <find>libwebp-dev</find>
+      <find>oniguruma-dev</find>
+      <find>face</find>
+      <find>fa-th-large</find>
+      <find>fa-face</find>
+      <find>docker-php-ext-configure gd</find>
+      <find>libjpeg-dev</find>
+      <find>libjpeg</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="nemox" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/RolesController.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/layouts/admin/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/layouts/admin/topbar/users.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/_profile.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/js/js/profile/index.js" />
+        <option value="$PROJECT_DIR$/src/resources/js/js/index.js" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/form/_settings.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/form/_general_info.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/form/_social.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/form/_header.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/js/js/profile/ProfileSettings.js" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/_form.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/form/_password.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/profile/_tabs.blade.php" />
+        <option value="$PROJECT_DIR$/src/app/City.php" />
+        <option value="$PROJECT_DIR$/src/app/State.php" />
+        <option value="$PROJECT_DIR$/src/database/seeds/CitiesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/src/app/Country.php" />
+        <option value="$PROJECT_DIR$/src/database/seeds/CountriesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/src/resources/js/js/Users/index.js" />
+        <option value="$PROJECT_DIR$/src/resources/js/js/Users/register.js" />
+        <option value="$PROJECT_DIR$/src/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/js/js/Users/UserDT.js" />
+        <option value="$PROJECT_DIR$/src/database/seeds/RolesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/src/database/seeds/PermissionsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/src/tests/Feature/UsersTest.php" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/src/.env" />
+        <option value="$PROJECT_DIR$/src/app/Http/Middleware/VerifyCsrfToken.php" />
+        <option value="$PROJECT_DIR$/src/phpunit.xml" />
+        <option value="$PROJECT_DIR$/php/php.dockerfile" />
+        <option value="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/src/app/User.php" />
+        <option value="$PROJECT_DIR$/src/database/migrations/2020_08_18_005708_create_profiles_table.php" />
+        <option value="$PROJECT_DIR$/src/config/filesystems.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/src/tests/Unit/UserTest.php" />
+        <option value="$PROJECT_DIR$/src/database/factories/ProfileFactory.php" />
+        <option value="$PROJECT_DIR$/src/acme/Helpers/ImageUploadHelper.php" />
+        <option value="$PROJECT_DIR$/src/acme/Helpers/StoreImagesHelper.php" />
+        <option value="$PROJECT_DIR$/src/app/Profile.php" />
+        <option value="$PROJECT_DIR$/src/tests/Unit/ProfileTest.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/CommunsController.php" />
+        <option value="$PROJECT_DIR$/src/tests/Feature/ImageUploadTest.php" />
+        <option value="$PROJECT_DIR$/src/routes/web.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/ProfileController.php" />
+        <option value="$PROJECT_DIR$/src/tests/Feature/ProfileTest.php" />
+        <option value="$PROJECT_DIR$/src/database/migrations/2020_08_20_002724_create_countries_table.php" />
+        <option value="$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b32d3a32-0a6d-40f8-87e7-179a18ea495a/console.sql" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/src/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="81" />
+    <option name="y" value="27" />
+    <option name="width" value="1839" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="checs&#9;null&#9;null&#10;we&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;ProfileContr&#9;null&#9;null&#10;c&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/CommunsController.php&#10;comm&#9;ACTION&#9;CheckinProject&#10;wen&#9;null&#9;null&#10;ProfileFa&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/factories/ProfileFactory.php&#10;ProfileTe&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Unit/ProfileTest.php&#10;Profile&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Profile.php&#10;UserFa&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/factories/UserFactory.php&#10;ImageTe&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Feature/ImageUploadTest.php&#10;fileS&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;create&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;Prof&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/factories/ProfileFactory.php&#10;ProfileF&#9;null&#9;null&#10;User&#9;null&#9;null&#10;create_user&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/migrations/2014_10_12_000000_create_users_table.php&#10;create_pr&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;Image&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Feature/ImageUploadTest.php&#10;filesystems&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;conf/f&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;config/file&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;filesy&#9;null&#9;null&#10;routes/we&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;Commun&#9;null&#9;null&#10;reg&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/auth/register.blade.php&#10;register&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/auth/register.blade.php&#10;Register&#9;null&#9;null&#10;Profi&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/ProfileController.php&#10;profile/i&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/profile/index.blade.php&#10;index&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/users/index.blade.php&#10;ProfileCo&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/ProfileController.php&#10;AuditController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/Audit/AuditController.php&#10;RolesController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/RolesController.php&#10;UsersController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/UsersController.php&#10;HomeController&#9;null&#9;null&#10;web&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;user&#9;null&#9;null&#10;UserContr&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/UsersController.php&#10;RolesTe&#9;null&#9;null&#10;RolesCon&#9;null&#9;null&#10;admin&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/layouts/admin.blade.php&#10;UserTes&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/tests/Feature/UsersTest.php&#10;UserDa&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/acme/Http/Controllers/UserDataTableController.php&#10;UsersCo&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/app/Http/Controllers/UsersController.php&#10;UsersC&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/app/Http/Controllers/UsersController.php&#10;Role&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/database/seeds/RolesTableSeeder.php&#10;Login&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/resources/views/auth/login.blade.php&#10;audits/i&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/resources/views/audits/index.blade.php&#10;UserData&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/acme/Http/Controllers/UserDataTableController.php" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documentos/countries-states-cities-database-master/csv/nicaragua_cities.csv" />
+    <property name="database.data.extractors.current" value="Comma-separated (CSV)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/php" />
+      <recent name="$PROJECT_DIR$/src/resources/js/js/Users" />
+      <recent name="$PROJECT_DIR$/src/resources/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/storage/app" />
+      <recent name="$PROJECT_DIR$/Jenkins/nexmo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d47ffa2-978e-46b0-bfb9-8c380401d82b" name="Default" comment="" />
+      <created>1596770768529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596770768529</updated>
+      <workItem from="1596770770003" duration="1603000" />
+      <workItem from="1596772504291" duration="380000" />
+      <workItem from="1596849054184" duration="1255000" />
+      <workItem from="1596910961299" duration="155000" />
+      <workItem from="1596998992109" duration="28000" />
+      <workItem from="1596999063828" duration="3742000" />
+      <workItem from="1597002870044" duration="23104000" />
+      <workItem from="1597079075024" duration="58552000" />
+      <workItem from="1597284323890" duration="12896000" />
+      <workItem from="1597299991982" duration="18451000" />
+      <workItem from="1597462232524" duration="5090000" />
+      <workItem from="1597680623589" duration="84957000" />
+      <workItem from="1598277196270" duration="52598000" />
+    </task>
+    <task id="LOCAL-00045" summary="Fix dev/Dockerfile">
+      <created>1597284643720</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1597284643720</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Actualizando composer file">
+      <created>1597289839327</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1597289839327</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Creando formulario de actualizacion de datos basicos de usuario">
+      <created>1597297949165</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1597297949165</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Cambios varios">
+      <created>1597335743418</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1597335743418</updated>
+    </task>
+    <task id="LOCAL-00049" summary="agregando roles a formulario de usuarios">
+      <created>1597348702240</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1597348702240</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Agregando @csrf a formulario">
+      <created>1597348923866</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1597348923867</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Pruebas varias y correciones generales">
+      <created>1597379496478</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1597379496478</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Ts">
+      <created>1597381642814</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1597381642814</updated>
+    </task>
+    <task id="LOCAL-00053" summary="fix Cambio de estado por usuario">
+      <created>1597463354244</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1597463354245</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Agregando Flash message">
+      <created>1597464414987</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1597464414987</updated>
+    </task>
+    <task id="LOCAL-00055" summary="agregando errores de validacion a formulario">
+      <created>1597465021592</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1597465021593</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Fix datatable">
+      <created>1597465445240</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1597465445240</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Incluyendo roles">
+      <created>1597685474958</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1597685474959</updated>
+    </task>
+    <task id="LOCAL-00058" summary="configurando editar roles">
+      <created>1597692305950</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1597692305950</updated>
+    </task>
+    <task id="LOCAL-00059" summary="configurando editar roles">
+      <created>1597692395313</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1597692395313</updated>
+    </task>
+    <task id="LOCAL-00060" summary="&#10;Refactory dataTable Audit">
+      <created>1597702548746</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1597702548746</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Agregando DataTable a Roles/edit">
+      <created>1597706768058</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1597706768059</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Refactory RolesController">
+      <created>1597710185607</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1597710185607</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Agregando middleware checkStatus">
+      <created>1597712156495</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1597712156495</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Cambiando estatus de usuaros al registrarse">
+      <created>1597718420565</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1597718420565</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Refectory protegiendo rutas y controladores">
+      <created>1597728633757</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1597728633757</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Estructurando profile">
+      <created>1597760332233</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1597760332233</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Agregando permisos de plantilla">
+      <created>1597762855181</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1597762855181</updated>
+    </task>
+    <task id="LOCAL-00068" summary="agregando profile page">
+      <created>1597798786875</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1597798786875</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Cambios en Docker y docke.php actualizacion de codigo de contenedor">
+      <created>1597802075076</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1597802075076</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Agregando Laravel/excel a librerias de uso">
+      <created>1597809875927</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1597809875927</updated>
+    </task>
+    <task id="LOCAL-00071" summary="cambio en comando php">
+      <created>1597848923860</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1597848923860</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Agregando estructura inicial de Profile">
+      <created>1597855981035</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1597855981036</updated>
+    </task>
+    <task id="LOCAL-00073" summary="actualizando permisos en controllers y plantillas blade">
+      <created>1597857083507</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1597857083507</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Configurando formulario de Profiles">
+      <created>1597873573834</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1597873573834</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Reconfigurando formulario y preparando para validacion de datos">
+      <created>1597879483042</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1597879483042</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Agregando modelos y migracion de paises y codigos">
+      <created>1597886219131</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1597886219131</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Agregando Base de datos de paises">
+      <created>1597895144635</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1597895144635</updated>
+    </task>
+    <task id="LOCAL-00078" summary="fix en base de datos">
+      <created>1597936044598</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1597936044598</updated>
+    </task>
+    <task id="LOCAL-00079" summary="removiendo roles en registro">
+      <created>1597936591889</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1597936591889</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Agregando code_country a formulario de registro">
+      <created>1597939483805</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1597939483805</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Agregando por defecto permisos a rol suscriber">
+      <created>1597977820604</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1597977820604</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Las imagenes se salvan correctamente">
+      <created>1598287048113</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1598287048113</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Correcione en envio de imagenes">
+      <created>1598297796250</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1598297796250</updated>
+    </task>
+    <task id="LOCAL-00084" summary="fix libreria no existente">
+      <created>1598297987079</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1598297987079</updated>
+    </task>
+    <task id="LOCAL-00085" summary="fix libreria no existente again">
+      <created>1598298126493</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1598298126493</updated>
+    </task>
+    <task id="LOCAL-00086" summary="[Gree] Images is saved">
+      <created>1598334847124</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1598334847124</updated>
+    </task>
+    <task id="LOCAL-00087" summary="[Gree] Relacion usuarios profile">
+      <created>1598339523731</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1598339523731</updated>
+    </task>
+    <task id="LOCAL-00088" summary="[green] Ruta de imagen se guarda en perfil">
+      <created>1598342644977</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1598342644977</updated>
+    </task>
+    <task id="LOCAL-00089" summary="[green] Refactory, metodo con ruta de avatar">
+      <created>1598368068762</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1598368068762</updated>
+    </task>
+    <task id="LOCAL-00090" summary="[Green] Refactory manejadores de imagen">
+      <created>1598373498623</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1598373498623</updated>
+    </task>
+    <task id="LOCAL-00091" summary="[Green] Refactory dividimos en 2 test">
+      <created>1598376240939</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1598376240939</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Refinando paises que tendran actividad">
+      <created>1598395854514</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1598395854514</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Actualiazndo base de datos">
+      <created>1598395874274</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1598395874274</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="262811000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="81" y="27" width="1839" height="1026" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48314607" sideWeight="0.50303954" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31381217" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5696629" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16769145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20681944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4775604" sideWeight="0.50303954" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31381217" sideWeight="0.4969605" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16936836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4214645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Cambios en Docker y docke.php actualizacion de codigo de contenedor" />
+    <MESSAGE value="Agregando Laravel/excel a librerias de uso" />
+    <MESSAGE value="cambio en comando php" />
+    <MESSAGE value="Agregando estructura inicial de Profile" />
+    <MESSAGE value="actualizando permisos en controllers y plantillas blade" />
+    <MESSAGE value="Configurando formulario de Profiles" />
+    <MESSAGE value="Reconfigurando formulario y preparando para validacion de datos" />
+    <MESSAGE value="Agregando modelos y migracion de paises y codigos" />
+    <MESSAGE value="Agregando Base de datos de paises" />
+    <MESSAGE value="fix en base de datos" />
+    <MESSAGE value="removiendo roles en registro" />
+    <MESSAGE value="Agregando code_country a formulario de registro" />
+    <MESSAGE value="Agregando por defecto permisos a rol suscriber" />
+    <MESSAGE value="Las imagenes se salvan correctamente" />
+    <MESSAGE value="Correcione en envio de imagenes" />
+    <MESSAGE value="fix libreria no existente" />
+    <MESSAGE value="fix libreria no existente again" />
+    <MESSAGE value="[Gree] Images is saved" />
+    <MESSAGE value="[Gree] Relacion usuarios profile" />
+    <MESSAGE value="[green] Ruta de imagen se guarda en perfil" />
+    <MESSAGE value="[green] Refactory, metodo con ruta de avatar" />
+    <MESSAGE value="[Green] Refactory manejadores de imagen" />
+    <MESSAGE value="[Green] Refactory dividimos en 2 test" />
+    <MESSAGE value="Refinando paises que tendran actividad" />
+    <MESSAGE value="Actualiazndo base de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualiazndo base de datos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/storage/app/public/avatar.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage/framework/testing/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Feature/AuditTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php.dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/filesystems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="81" column="74" lean-forward="false" selection-start-line="81" selection-start-column="74" selection-end-line="81" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Unit/UserTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#30#43#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="e#23#69#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="156" column="13" lean-forward="false" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/node_modules/@types/node/child_process.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="334" column="14" lean-forward="false" selection-start-line="334" selection-start-column="14" selection-end-line="334" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/acme/Helpers/StoreFilesHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/seeds/RolesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/factories/ProfileFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Unit/ProfileTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#30#46#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Feature/ImageUploadTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="45" column="82" lean-forward="true" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
+          <folding>
+            <element signature="e#33#49#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/CommunsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Middleware/CheckStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Feature/RolesTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2020_08_18_005708_create_profiles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Feature/ProfileTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="94" column="33" lean-forward="false" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Feature/UsersTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Feature/LoginTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/b32d3a32-0a6d-40f8-87e7-179a18ea495a.SCHEMA:homestead">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>b32d3a32-0a6d-40f8-87e7-179a18ea495a.SCHEMA:homestead</OriginalElement>
+          <nodes>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.model_has_permissions</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_personal_access_clients</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.countries</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_refresh_tokens</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.failed_jobs</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.model_has_roles</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.roles</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_auth_codes</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_clients</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.role_has_permissions</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.audits</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.migrations</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.users</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.states</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.password_resets</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.cities</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.profiles</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.permissions</node>
+            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_access_tokens</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8792865362485612" x="334.5453474676092" y="349.6794922130613" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8819d51d/b32d3a32-0a6d-40f8-87e7-179a18ea495a/homestead.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/cities_2020_08_25_16_40_05.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/seeds/StatesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11160">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/cities_2020_08_25_16_42_34.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/migrations/2020_08_20_002724_create_countries_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/cities_2020_08_25_18_03_05.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-920">
+          <caret line="14" column="109" lean-forward="false" selection-start-line="14" selection-start-column="109" selection-end-line="14" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/states_2020_08_25_18_08_53.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/countries_2020_08_25_18_09_31.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/cities_2020_08_25_18_07_37.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8819d51d/b32d3a32-0a6d-40f8-87e7-179a18ea495a/homestead.cities">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/seeds/CountriesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1213">
+          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/cities_2020_08_26_08_13_41.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="139" column="34" lean-forward="false" selection-start-line="139" selection-start-column="34" selection-end-line="139" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/cities_2020_08_26_08_15_00.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="138" lean-forward="false" selection-start-line="0" selection-start-column="138" selection-end-line="0" selection-end-column="138" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8819d51d/b32d3a32-0a6d-40f8-87e7-179a18ea495a/homestead.countries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b32d3a32-0a6d-40f8-87e7-179a18ea495a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8819d51d/b32d3a32-0a6d-40f8-87e7-179a18ea495a/homestead.states">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
