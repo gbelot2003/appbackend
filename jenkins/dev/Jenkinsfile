@@ -40,7 +40,7 @@ pipeline{
         }
         stage("Ejecutando Pruebas Unitarias"){
             steps{
-                sh "docker-compose exec php php artisan test"
+                sh "docker-compose exec -T php php artisan test"
             }
         }
     }
