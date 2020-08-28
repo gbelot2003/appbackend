@@ -25,6 +25,7 @@ pipeline{
                         echo "========Procesos activos, el archivo Existe========"
                     }else{
                         sh "cp ./.env.example ./.env"
+                        sh "docker-compose down"
                         sh "docker-compose run --rm artisan key:generate"
                     }
                 }
