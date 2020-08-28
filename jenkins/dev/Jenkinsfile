@@ -26,7 +26,7 @@ pipeline{
                     }else{
                         sh "cp ./.env.example ./.env"
                         sh "docker-compose down"
-                        sh "docker-compose run --rm artisan key:generate"
+                        sh "docker-compose -T php php artisan key:generate"
                     }
                 }
                 
