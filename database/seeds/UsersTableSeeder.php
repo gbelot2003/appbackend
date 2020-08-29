@@ -301,63 +301,84 @@ class UsersTableSeeder extends Seeder
         ));
 
         $user = User::find(1);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Administrator');
 
+
         $user = User::find(2);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Supervisor');
 
         $user = User::find(3);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Administrator');
 
         $user = User::find(4);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Supervisor');
 
         $user = User::find(5);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Sponsor');
 
         $user = User::find(6);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Sponsor');
 
         $user = User::find(7);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Sponsor');
 
         $user = User::find(8);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Sponsor');
 
         $user = User::find(9);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Sponsor');
 
         $user = User::find(10);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Sponsor');
 
         $user = User::find(11);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(12);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(13);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(14);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(15);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(16);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(17);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(18);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(19);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
 
         $user = User::find(20);
+        $profile = factory(\App\Profile::class)->create(['user_id' => $user->id])->toArray();
         $user->assignRole('Subscriber');
     }
 }
