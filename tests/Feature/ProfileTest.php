@@ -74,6 +74,7 @@ class ProfileTest extends TestCase
     /** @test */
     public function only_auth_users_have_access_to_edit_profile()
     {
+        //$this->withoutExceptionHandling();
 
         // Sin autenticación no puedes ver perfil
         $this->get('/profile/edit')

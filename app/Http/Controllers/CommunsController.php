@@ -14,7 +14,6 @@ class CommunsController extends Controller
      */
     function __construct()
     {
-
     }
 
     /**

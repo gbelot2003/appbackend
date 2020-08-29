@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Contry;
+use App\Country;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -31,7 +33,9 @@ class ProfileController extends Controller
     {
         $user = Auth::user();
         $title = 'Profile';
-        return View('profile.edit', compact('user', 'title'));
+        // se debe modificar
+        $countries = Country::pluck('name', 'id');
+        return View('profile.edit', compact('user', 'title', 'countries'));
     }
 
 

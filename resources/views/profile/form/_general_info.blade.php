@@ -41,7 +41,8 @@
         <div class="col-md-6">
             <div class="form-group text-left">
                 <label for="country">{{ __('Country') }}</label>
-                <input type="country" name="country" class="form-control" id="country" placeholder="Country" value="">
+                {!! Form::select('contry_id', $countries,
+                isset(auth()->user()->profile->country_id) ? auth()->user()->profile->country_id : null,  ['class' => 'form-control'])!!}
             </div>
         </div>
         <div class="col-md-6">
