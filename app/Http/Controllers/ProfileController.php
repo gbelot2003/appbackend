@@ -41,42 +41,15 @@ class ProfileController extends Controller
         return View('profile.edit', compact('user', 'title', 'countries', 'cities'));
     }
 
-
-    public function update(Request $request)
-    {
-        if ($request->has('name') || $request->has('email')         ||
-            $request->has('phonefield') || $request->has('alias')   ||
-            $request->has('about')) {
-
-            $update = new ProfileControllerHelper();
-            $update->UpdateGeneralInfo($request);
-
-        }
-
-        if ($request->has('field_facebook') || $request->has('field_twitter') ||
-            $request->has('field_instagram') || $request->has('field_linkedin')) {
-
-            $update = new ProfileControllerHelper();
-            $update->SocialMediaUpdate($request);
-        }
-
-        if ($request->has('password')) {
-            $this->UpdatePassword($request);
-        }
-    }
-
     /**
      * @param Request $request
      */
-    private function UpdatePassword(Request $request)
+    public function update(Request $request)
     {
-        $request->validate([
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
-
-        $passwordd = bcrypt($request->get('password'));
-        auth()->user()->update([
-            'password' => $passwordd
-        ]);
+        $update = new ProfileControllerHelper();
+        $update->updating($request);
     }
+
+
+
 }

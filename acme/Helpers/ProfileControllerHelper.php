@@ -13,10 +13,38 @@ use Illuminate\Http\Request;
 
 class ProfileControllerHelper
 {
+
     /**
      * @param Request $request
      */
-    public function UpdateGeneralInfo(Request $request)
+    public function updating(Request $request)
+    {
+        if ($request->has('name') || $request->has('email') ||
+            $request->has('phonefield') || $request->has('alias') ||
+            $request->has('about')
+        ) {
+
+            $this->UpdateGeneralInfo($request);
+        }
+
+        if ($request->has('field_facebook') || $request->has('field_twitter') ||
+            $request->has('field_instagram') || $request->has('field_linkedin')
+        ) {
+
+            $this->SocialMediaUpdate($request);
+        }
+
+        if ($request->has('password')) {
+            $this->UpdatePassword($request);
+        }
+    }
+
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    private function UpdateGeneralInfo(Request $request)
     {
         $request->validate(
             [
@@ -34,12 +62,15 @@ class ProfileControllerHelper
             'alias' => $request->get('alias'),
             'about' => $request->get('about')
         ]);
+
+        return response()->json('ok', 200);
     }
 
     /**
      * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function SocialMediaUpdate(Request $request)
+    private function SocialMediaUpdate(Request $request)
     {
         $request->validate(
             [
@@ -56,5 +87,25 @@ class ProfileControllerHelper
             'field_instagram' => $request->get('field_instagram'),
             'field_linkedin' => $request->get('field_linkedin'),
         ]);
+
+        return response()->json('ok', 200);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    private function updatePassword(Request $request)
+    {
+        $request->validate([
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+
+        $passwordd = bcrypt($request->get('password'));
+        auth()->user()->update([
+            'password' => $passwordd
+        ]);
+
+        return response()->json('ok', 200);
     }
 }
