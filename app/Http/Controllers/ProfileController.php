@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\City;
-use App\Contry;
 use App\Country;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use acme\Http\Controllers\GeneralInfoController;
 
 class ProfileController extends Controller
 {
@@ -43,20 +43,39 @@ class ProfileController extends Controller
 
     public function update(Request $request)
     {
-        $user = auth()->user();
+        if ($request->has('name') || $request->has('email')         ||
+            $request->has('phonefield') || $request->has('alias')   ||
+            $request->has('about')) {
 
+            $this->UpdateGeneralInfo($request);
+
+        }
+
+        if ($request->has('field_faceboot')){
+
+        }
+    }
+
+    /**
+     * @param Request $request
+     */
+    private function UpdateGeneralInfo(Request $request)
+    {
         $request->validate(
             [
-                'name'          => 'required',
-                'email'         => 'required',
-                'phonefield'    => 'required',
-                'alias'         => 'nullable|string'
+                'name'              => 'required',
+                'email'             => 'required',
+                'phonefield'        => 'required',
+                'alias'             => 'nullable|string',
+                'about'             => 'nullable|string',
             ]
         );
 
-        $user->update($request->all());
+        auth()->user()->update($request->only(['name', 'email', 'phonefield']));
 
-
-
+        auth()->user()->profile->update([
+            'alias' => $request->get('alias'),
+            'about' => $request->get('about')
+        ]);
     }
 }

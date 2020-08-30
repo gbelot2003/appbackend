@@ -54,6 +54,7 @@ class ProfileTest extends TestCase
             'email'         => $this->user2edit->email,
             'phonefield'    => $this->user2edit->phonefield,
             'alias'         => $this->faker->name,
+            'about'         => $this->faker->text
         ], $override);
     }
 
@@ -140,6 +141,62 @@ class ProfileTest extends TestCase
         $response->assertSessionHasErrors('alias');
     }
 
+    /** @test */
+    public function the_email_is_updated()
+    {
+        $this->withoutExceptionHandling();
+
+        $response = $this->actingAs($this->user2edit)->put('/profile',
+            $this->validFields(['email' => 'new@email.com']));
+
+        $this->assertEquals($this->user2edit->email, 'new@email.com');
+    }
+
+    /** @test */
+    public function the_name_is_updated()
+    {
+        $this->withoutExceptionHandling();
+
+        $response = $this->actingAs($this->user2edit)->put('/profile',
+            $this->validFields(['name' => 'newName']));
+
+        $this->assertEquals($this->user2edit->name, 'newName');
+    }
+
+    /** @test */
+    public function the_phonefield_is_updated()
+    {
+        $this->withoutExceptionHandling();
+
+        $response = $this->actingAs($this->user2edit)->put('/profile',
+            $this->validFields(['phonefield' => '504 33225566']));
+
+        $this->assertEquals($this->user2edit->phonefield, '504 33225566');
+    }
+
+    /** @test */
+    public function the_alias_is_updated()
+    {
+        //$this->withoutExceptionHandling();
+
+        //dd($this->user2edit->profile);
+        $response = $this->actingAs($this->user2edit)->put('/profile',
+            $this->validFields(['alias' => 'new alias']));
+
+        $this->assertEquals($this->user2edit->profile->alias, 'new alias');
+    }
+
+    /** @test */
+    public function the_about_is_updated()
+    {
+        //$this->withoutExceptionHandling();
+
+        //dd($this->user2edit->profile);
+        $response = $this->actingAs($this->user2edit)->put('/profile',
+            $this->validFields(['about' => 'text about']));
+
+        $this->assertEquals($this->user2edit->profile->about, 'text about');
+    }
 
 
 }

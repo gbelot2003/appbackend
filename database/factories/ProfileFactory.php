@@ -14,6 +14,7 @@ $factory->define(Profile::class, function (Faker $faker) {
     return [
         'user_id'           => factory(User::class)->create()->id,
         'avatar'            => $faker->imageUrl,
+        'alias'             => $faker->name,
         'country_id'        => array_rand([53, 66, 97, 170]),
         'city_id'           => array_rand([54333, 54281, 53908]),
         'about'             => $faker->text(200),
