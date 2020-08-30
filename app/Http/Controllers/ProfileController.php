@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\City;
 use App\Contry;
 use App\Country;
 use Illuminate\Http\Request;
@@ -35,7 +36,8 @@ class ProfileController extends Controller
         $title = 'Profile';
         // se debe modificar
         $countries = Country::pluck('name', 'id');
-        return View('profile.edit', compact('user', 'title', 'countries'));
+        $cities = City::where('country_id', $user->profile->country_id)->pluck('name', 'id');
+        return View('profile.edit', compact('user', 'title', 'countries', 'cities'));
     }
 
 

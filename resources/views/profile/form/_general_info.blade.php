@@ -48,7 +48,8 @@
         <div class="col-md-6">
             <div class="form-group text-left">
                 <label for="city">{{ __('City') }}</label>
-                <input type="city" name="country" class="form-control" id="city" placeholder="City" value="">
+                {!! Form::select('city_id', $cities, auth()->user()->profile->city_id,
+                    ['class' => 'form-control']) !!}
             </div>
         </div>
     </div>
@@ -58,7 +59,10 @@
         <div class="col-md-12">
             <div class="form-group text-left">
                 <label for="name">{{ __('About Me') }}</label>
-                <textarea class="form-control" id="about" name="about" placeholder="Tell us Something about you"></textarea>
+                <textarea class="form-control" id="about" name="about"
+                          placeholder="Tell us Something about you">
+                    {{ auth()->user()->profile->about }}
+                </textarea>
             </div>
         </div>
 

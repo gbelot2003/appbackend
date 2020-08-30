@@ -302,7 +302,11 @@ class UsersTableSeeder extends Seeder
 
         $user = User::find(1);
         $profile = factory(\App\Profile::class)->create(
-            ['user_id' => $user->id, 'country_id' => 97])->toArray();
+            [
+                'user_id' => $user->id,
+                'country_id' => 97,
+                'city_id' => 54333,
+            ])->toArray();
         $user->assignRole('Administrator');
 
         $user = User::find(2);

@@ -30,10 +30,15 @@ class ProfileTest extends TestCase
 
         // creamos un administrador para test
         $this->admin = factory(User::class)->create();
+        // Si el usuario no tiene profile da error
+        $profile = factory(\App\Profile::class)
+            ->create(['user_id' => $this->admin->id])->toArray();
         $this->admin->assignRole('Administrator');
 
         // creamos un usuario suscriber para tests
         $this->user2edit = factory(User::class)->create();
+        $profile = factory(\App\Profile::class)
+            ->create(['user_id' => $this->user2edit->id])->toArray();
         $this->user2edit->assignRole('Subscriber');
     }
 
@@ -77,11 +82,11 @@ class ProfileTest extends TestCase
         //$this->withoutExceptionHandling();
 
         // Sin autenticación no puedes ver perfil
-        $this->get('/profile/edit')
-            ->assertStatus(302);
+        $this->get('profile/edit')
+            ->assertRedirect('login');
 
         // Un usuario comun tiene acceso a perfil
-        $res1 = $this->actingAs($this->user2edit)->get('/profile/edit');
+        $res1 = $this->actingAs($this->user2edit)->get('profile/edit');
         $res1->assertStatus(200);
 
         // EL admin tiene autorizacion

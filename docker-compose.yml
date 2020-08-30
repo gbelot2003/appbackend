@@ -14,11 +14,12 @@ services:
       - php
       - mysql
       - redis
+      - npm
     networks:
       - laravel
 
   php:
-    image: gbelot2003/docker-laravel_php_1:v3
+    image: gbelot2003/docker-laravel_php_1:latest
     volumes:
       - ./:/var/www/html
     ports:
