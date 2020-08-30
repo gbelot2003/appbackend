@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
 
 class ProfileTest extends TestCase
@@ -105,6 +106,8 @@ class ProfileTest extends TestCase
     /** @test */
     public function datos_generales_need_a_name()
     {
+        //$this->withoutExceptionHandling();
+
         $response = $this->actingAs($this->user2edit)->put('/profile',
                 $this->validFields(['name' => '']));
 
@@ -315,6 +318,20 @@ class ProfileTest extends TestCase
         ]);
 
         $this->assertEquals($this->user2edit->profile->field_linkedin, 'https://www.facebook.com/profile.php?id=100042918961280');
+    }
+
+    /** @test */
+    public function password_is_updated()
+    {
+
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'password'              => 'passwordSolid01',
+            'password_confirmation' => 'passwordSolid01',
+        ]);
+
+        $hash = Hash::check('passwordSolid01', $this->user2edit->password);
+
+        $this->assertEquals(true, $hash);
     }
 }
 
