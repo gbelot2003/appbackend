@@ -41,14 +41,14 @@
         <div class="col-md-6">
             <div class="form-group text-left">
                 <label for="country">{{ __('Country') }}</label>
-                {!! Form::select('contry_id', $countries, auth()->user()->profile->country_id,
+                {!! Form::select('contry_id', $countries, $user->profile->country_id,
                     ['class' => 'form-control']) !!}
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group text-left">
                 <label for="city">{{ __('City') }}</label>
-                {!! Form::select('city_id', $cities, auth()->user()->profile->city_id,
+                {!! Form::select('city_id', $cities, $user->profile->city_id,
                     ['class' => 'form-control']) !!}
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <label for="name">{{ __('About Me') }}</label>
                 <textarea class="form-control" id="about" name="about"
                           placeholder="Tell us Something about you">
-                    {{ auth()->user()->profile->about }}
+                    {{ $user->profile->about }}
                 </textarea>
             </div>
         </div>

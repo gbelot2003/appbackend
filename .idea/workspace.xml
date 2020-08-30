@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d47ffa2-978e-46b0-bfb9-8c380401d82b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/ProfileFactory.php" afterPath="$PROJECT_DIR$/database/factories/ProfileFactory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_005708_create_profiles_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_005708_create_profiles_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" afterPath="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Feature/ProfileTest.php" afterPath="$PROJECT_DIR$/tests/Feature/ProfileTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/profile/form/_social.blade.php" afterPath="$PROJECT_DIR$/resources/views/profile/form/_social.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/tests/Feature/ProfileTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+              <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -63,8 +60,18 @@
       <file leaf-file-name="2020_08_18_005708_create_profiles_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_18_005708_create_profiles_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="460">
+              <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileFactory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/factories/ProfileFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -73,24 +80,24 @@
       <file leaf-file-name="_general_info.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="63" column="53" lean-forward="false" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+            <state relative-caret-position="531">
+              <caret line="63" column="47" lean-forward="false" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
               <folding>
-                <marker date="1598796924460" expanded="true" signature="1587:1711" ph="..." />
-                <marker date="1598796924460" expanded="true" signature="1587:1712" ph="..." />
-                <marker date="1598796924460" expanded="true" signature="1601:1710" ph="..." />
-                <marker date="1598796924460" expanded="true" signature="1906:2023" ph="..." />
-                <marker date="1598796924460" expanded="true" signature="1920:2021" ph="..." />
+                <marker date="1598797623344" expanded="true" signature="1587:1702" ph="..." />
+                <marker date="1598797623344" expanded="true" signature="1587:1703" ph="..." />
+                <marker date="1598797623344" expanded="true" signature="1601:1701" ph="..." />
+                <marker date="1598797623344" expanded="true" signature="1897:2005" ph="..." />
+                <marker date="1598797623344" expanded="true" signature="1911:2003" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileFactory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/factories/ProfileFactory.php">
+      <file leaf-file-name="_social.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_social.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="40">
+              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -123,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/resources/views/profile/form/_general_info.blade.php" />
         <option value="$PROJECT_DIR$/src/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/src/resources/views/profile/form/_social.blade.php" />
         <option value="$PROJECT_DIR$/src/resources/views/profile/form/_header.blade.php" />
@@ -171,9 +177,10 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/tests/Feature/ProfileTest.php" />
-        <option value="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_18_005708_create_profiles_table.php" />
         <option value="$PROJECT_DIR$/database/factories/ProfileFactory.php" />
+        <option value="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/profile/form/_social.blade.php" />
       </list>
     </option>
   </component>
@@ -376,14 +383,7 @@
       <workItem from="1597680623589" duration="84957000" />
       <workItem from="1598277196270" duration="52598000" />
       <workItem from="1598668528350" duration="2570000" />
-      <workItem from="1598795452773" duration="1682000" />
-    </task>
-    <task id="LOCAL-00047" summary="Creando formulario de actualizacion de datos basicos de usuario">
-      <created>1597297949165</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1597297949165</updated>
+      <workItem from="1598795452773" duration="2348000" />
     </task>
     <task id="LOCAL-00048" summary="Cambios varios">
       <created>1597335743418</created>
@@ -721,11 +721,18 @@
       <option name="project" value="LOCAL" />
       <updated>1598671064369</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="[green] Configurando datos generales en backend">
+      <created>1598797165049</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1598797165049</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267143000" />
+    <option name="totallyTimeSpent" value="267809000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="27" width="1839" height="1026" extended-state="6" />
@@ -783,7 +790,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="cambio en comando php" />
     <MESSAGE value="Agregando estructura inicial de Profile" />
     <MESSAGE value="actualizando permisos en controllers y plantillas blade" />
     <MESSAGE value="Configurando formulario de Profiles" />
@@ -808,7 +814,8 @@
     <MESSAGE value="Actualiazndo base de datos" />
     <MESSAGE value="Configurando profile a usuarios" />
     <MESSAGE value="Agregando campos a Profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregando campos a Profile" />
+    <MESSAGE value="[green] Configurando datos generales en backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="[green] Configurando datos generales en backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,7 +824,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/node_modules/@types/node/child_process.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/acme/Helpers/StoreFilesHelper.php" />
     <entry file="file://$PROJECT_DIR$/src/database/seeds/RolesTableSeeder.php" />
     <entry file="file://$PROJECT_DIR$/src/database/factories/ProfileFactory.php" />
@@ -1010,7 +1016,7 @@
     <entry file="file://$PROJECT_DIR$/tests/Feature/ProfileTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1049,30 +1055,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_18_005708_create_profiles_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="460">
+          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/ProfileFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="63" column="53" lean-forward="false" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="531">
+          <caret line="63" column="47" lean-forward="false" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
           <folding>
-            <marker date="1598796924460" expanded="true" signature="1587:1711" ph="..." />
-            <marker date="1598796924460" expanded="true" signature="1587:1712" ph="..." />
-            <marker date="1598796924460" expanded="true" signature="1601:1710" ph="..." />
-            <marker date="1598796924460" expanded="true" signature="1906:2023" ph="..." />
-            <marker date="1598796924460" expanded="true" signature="1920:2021" ph="..." />
+            <marker date="1598797623344" expanded="true" signature="1587:1702" ph="..." />
+            <marker date="1598797623344" expanded="true" signature="1587:1703" ph="..." />
+            <marker date="1598797623344" expanded="true" signature="1601:1701" ph="..." />
+            <marker date="1598797623344" expanded="true" signature="1897:2005" ph="..." />
+            <marker date="1598797623344" expanded="true" signature="1911:2003" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ProfileFactory.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_social.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        <state relative-caret-position="40">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
         </state>
       </provider>
