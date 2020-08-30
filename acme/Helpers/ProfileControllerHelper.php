@@ -46,15 +46,7 @@ class ProfileControllerHelper
      */
     private function UpdateGeneralInfo(Request $request)
     {
-        $request->validate(
-            [
-                'name'              => 'required',
-                'email'             => 'required',
-                'phonefield'        => 'required',
-                'alias'             => 'nullable|string',
-                'about'             => 'nullable|string',
-            ]
-        );
+        $this->ValidateGeneralInfo($request);
 
         auth()->user()->update($request->only(['name', 'email', 'phonefield']));
 
@@ -72,14 +64,7 @@ class ProfileControllerHelper
      */
     private function SocialMediaUpdate(Request $request)
     {
-        $request->validate(
-            [
-                'field_facebook' => 'nullable|string|url',
-                'field_twitter' => 'nullable|string|url',
-                'field_instagram' => 'nullable|string|url',
-                'field_linkedin' => 'nullable|string|url',
-            ]
-        );
+        $this->ValidateSocialInfo($request);
 
         auth()->user()->profile->update([
             'field_facebook' => $request->get('field_facebook'),
@@ -97,9 +82,7 @@ class ProfileControllerHelper
      */
     private function updatePassword(Request $request)
     {
-        $request->validate([
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+        $this->ValidatePassword($request);
 
         $passwordd = bcrypt($request->get('password'));
         auth()->user()->update([
@@ -107,5 +90,47 @@ class ProfileControllerHelper
         ]);
 
         return response()->json('ok', 200);
+    }
+
+    /**
+     * @param Request $request
+     */
+    private function ValidateGeneralInfo(Request $request)
+    {
+        $request->validate(
+            [
+                'name' => 'required',
+                'email' => 'required',
+                'phonefield' => 'required',
+                'alias' => 'nullable|string',
+                'about' => 'nullable|string',
+            ]
+        );
+    }
+
+    /**
+     * @param Request $request
+     */
+    private function ValidateSocialInfo(Request $request)
+    {
+        $request->validate(
+            [
+                'field_facebook' => 'nullable|string|url',
+                'field_twitter' => 'nullable|string|url',
+                'field_instagram' => 'nullable|string|url',
+                'field_linkedin' => 'nullable|string|url',
+            ]
+        );
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    private function ValidatePassword(Request $request)
+    {
+        return $request->validate([
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
     }
 }
