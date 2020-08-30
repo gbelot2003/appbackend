@@ -51,8 +51,10 @@ class ProfileController extends Controller
 
         }
 
-        if ($request->has('field_faceboot')){
+        if ($request->has('field_facebook') || $request->has('field_twitter') ||
+            $request->has('field_instagram') || $request->has('field_linkedin')) {
 
+            $this->SocialMediaUpdate($request);
         }
     }
 
@@ -76,6 +78,28 @@ class ProfileController extends Controller
         auth()->user()->profile->update([
             'alias' => $request->get('alias'),
             'about' => $request->get('about')
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     */
+    private function SocialMediaUpdate(Request $request)
+    {
+        $request->validate(
+            [
+                'field_facebook' => 'nullable|string|url',
+                'field_twitter' => 'nullable|string|url',
+                'field_instagram' => 'nullable|string|url',
+                'field_linkedin' => 'nullable|string|url',
+            ]
+        );
+
+        auth()->user()->profile->update([
+            'field_facebook' => $request->get('field_facebook'),
+            'field_twitter' => $request->get('field_twitter'),
+            'field_instagram' => $request->get('field_instagram'),
+            'field_linkedin' => $request->get('field_linkedin'),
         ]);
     }
 }

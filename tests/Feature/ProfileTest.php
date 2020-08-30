@@ -198,7 +198,124 @@ class ProfileTest extends TestCase
         $this->assertEquals($this->user2edit->profile->about, 'text about');
     }
 
+    /** @test */
+    public function the_field_facebook_is_url()
+    {
+        // el valor es cadena de texto y no url
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_facebook' => 'wawasa'
+        ]);
 
+        $response->assertSessionHasErrors('field_facebook');
+
+        // el valor es decimal y no url
+        $response1 = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_facebook' => 1212121
+        ]);
+
+        $response1->assertSessionHasErrors('field_facebook');
+    }
+
+    /** @test */
+    public function the_field_facebook_is_updated()
+    {
+        $this->withoutExceptionHandling();
+
+        //dd($this->user2edit->profile);
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_facebook' => 'https://www.facebook.com/profile.php?id=100042918961280'
+        ]);
+
+        $this->assertEquals($this->user2edit->profile->field_facebook, 'https://www.facebook.com/profile.php?id=100042918961280');
+    }
+
+    /** @test */
+    public function the_field_twitter_is_url()
+    {
+        // el valor es cadena de texto y no url
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_twitter' => 'wawasa'
+        ]);
+
+        $response->assertSessionHasErrors('field_twitter');
+
+        // el valor es decimal y no url
+        $response1 = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_twitter' => 1212121
+        ]);
+
+        $response1->assertSessionHasErrors('field_twitter');
+    }
+
+    /** @test */
+    public function the_field_twitter_is_updated()
+    {
+        //$this->withoutExceptionHandling();
+
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_twitter' => 'https://www.facebook.com/profile.php?id=100042918961280'
+        ]);
+
+        $this->assertEquals($this->user2edit->profile->field_twitter, 'https://www.facebook.com/profile.php?id=100042918961280');
+    }
+
+    /** @test */
+    public function the_field_instagram_is_url()
+    {
+        // el valor es cadena de texto y no url
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_instagram' => 'wawasa'
+        ]);
+
+        $response->assertSessionHasErrors('field_instagram');
+
+        // el valor es decimal y no url
+        $response1 = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_instagram' => 1212121
+        ]);
+
+        $response1->assertSessionHasErrors('field_instagram');
+    }
+
+    /** @test */
+    public function the_field_instagram_is_updated()
+    {
+        //$this->withoutExceptionHandling();
+
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_instagram' => 'https://www.facebook.com/profile.php?id=100042918961280'
+        ]);
+
+        $this->assertEquals($this->user2edit->profile->field_instagram, 'https://www.facebook.com/profile.php?id=100042918961280');
+    }
+
+    /** @test */
+    public function the_field_linkedin_is_url()
+    {
+        // el valor es cadena de texto y no url
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_linkedin' => 'wawasa'
+        ]);
+
+        $response->assertSessionHasErrors('field_linkedin');
+
+        // el valor es decimal y no url
+        $response1 = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_linkedin' => 1212121
+        ]);
+
+        $response1->assertSessionHasErrors('field_linkedin');
+    }
+
+    /** @test */
+    public function the_field_linkedin_is_updated()
+    {
+        $response = $this->actingAs($this->user2edit)->put('/profile', [
+            'field_linkedin' => 'https://www.facebook.com/profile.php?id=100042918961280'
+        ]);
+
+        $this->assertEquals($this->user2edit->profile->field_linkedin, 'https://www.facebook.com/profile.php?id=100042918961280');
+    }
 }
 
 
