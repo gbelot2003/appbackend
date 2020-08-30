@@ -23,7 +23,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $user = Auth::user();
+        $user = auth()->user();
         $title = 'Profile';
         return View('profile.index', compact('user', 'title'));
     }
@@ -33,7 +33,7 @@ class ProfileController extends Controller
      */
     public function edit()
     {
-        $user = Auth::user();
+        $user = auth()->user();
         $title = 'Profile';
         // se debe modificar
         $countries = Country::pluck('name', 'id');

@@ -5,20 +5,21 @@
 
     <div class="card-body">
         <h5 class="card-title">{{ $user->name }}</h5>
+        <p class="text-muted">{{ $user->roles[0]->name }}</p>
         <small>{{ __('About Me') }}</small>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">{{ $user->profile->about }}</p>
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
-            <small>{{ __('About Me') }}</small>
+            <small>{{ __('E-mail') }}</small>
             <p>{{ $user->email }}</p>
         </li>
         <li class="list-group-item">
-            <small>{{ __('About Me') }}</small>
+            <small>{{ __('Telephone') }}</small>
             <p>{{ $user->phonefield }}</p></li>
         <li class="list-group-item">
-            <small>{{ __('About Me') }}</small>
-            <p>{{ $user->roles[0]->name }}</p>
+            <small>{{ __('Alias') }}</small>
+            <p>{{ $user->profile->alias }}</p>
         </li>
     </ul>
 </div>

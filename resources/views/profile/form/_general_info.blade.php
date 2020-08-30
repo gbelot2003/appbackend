@@ -25,7 +25,8 @@
         <div class="col-md-6">
             <div class="form-group text-left">
                 <label for="name">{{ __('Alias') }}</label>
-                <input type="text" name="alias" class="form-control" id="alias" placeholder="{{__('An alias you prefer')}}">
+                <input type="text" name="alias" class="form-control" id="alias"
+                       value="{{ $user->profile->alias }}" placeholder="{{__('An alias you prefer')}}">
             </div>
         </div>
 
@@ -42,14 +43,14 @@
             <div class="form-group text-left">
                 <label for="country">{{ __('Country') }}</label>
                 {!! Form::select('contry_id', $countries, $user->profile->country_id,
-                    ['class' => 'form-control']) !!}
+                    ['class' => 'form-control', 'id' => 'user_countries']) !!}
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group text-left">
                 <label for="city">{{ __('City') }}</label>
                 {!! Form::select('city_id', $cities, $user->profile->city_id,
-                    ['class' => 'form-control']) !!}
+                    ['class' => 'form-control', 'id' => 'user_cities']) !!}
             </div>
         </div>
     </div>
@@ -61,7 +62,7 @@
                 <label for="name">{{ __('About Me') }}</label>
                 <textarea class="form-control" id="about" name="about"
                           placeholder="Tell us Something about you">
-                    {{ $user->profile->about }}
+                    {{ trim($user->profile->about) }}
                 </textarea>
             </div>
         </div>

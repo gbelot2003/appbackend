@@ -6,7 +6,7 @@
  * Time: 11:22 AM
  */
 
-namespace acme\Helpers;
+namespace Acme\Helpers;
 
 
 use Illuminate\Http\Request;

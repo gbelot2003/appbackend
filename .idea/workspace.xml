@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d47ffa2-978e-46b0-bfb9-8c380401d82b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/acme/Helpers/AvatarCreator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Unit/AvatarCreatorTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/acme/Helpers/ProfileControllerHelper.php" afterPath="$PROJECT_DIR$/acme/Helpers/ProfileControllerHelper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/profile/_profile.blade.php" afterPath="$PROJECT_DIR$/resources/views/profile/_profile.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" afterPath="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/profile/form/_header.blade.php" afterPath="$PROJECT_DIR$/resources/views/profile/form/_header.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,33 +41,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProfileTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/ProfileTest.php">
+      <file leaf-file-name="AvatarCreator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/acme/Helpers/AvatarCreator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="325" column="0" lean-forward="true" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
+      <file leaf-file-name="StoreFilesHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/acme/Helpers/StoreFilesHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#81#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="440">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileControllerHelper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/acme/Helpers/ProfileControllerHelper.php">
+      <file leaf-file-name="AvatarCreatorTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/AvatarCreatorTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="360">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,10 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/resources/views/profile/form/_password.blade.php" />
-        <option value="$PROJECT_DIR$/src/resources/views/profile/_tabs.blade.php" />
-        <option value="$PROJECT_DIR$/src/app/City.php" />
-        <option value="$PROJECT_DIR$/src/app/State.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/CitiesTableSeeder.php" />
         <option value="$PROJECT_DIR$/src/app/Country.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/CountriesTableSeeder.php" />
@@ -135,7 +135,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_18_005708_create_profiles_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/form/_social.blade.php" />
         <option value="$PROJECT_DIR$/acme/Http/Controllers/SocialNetController.php" />
         <option value="$PROJECT_DIR$/database/factories/ProfileFactory.php" />
@@ -144,7 +143,12 @@
         <option value="$PROJECT_DIR$/resources/views/profile/form/_password.blade.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ProfileTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
+        <option value="$PROJECT_DIR$/resources/views/profile/_profile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/profile/form/_header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/acme/Helpers/ProfileControllerHelper.php" />
+        <option value="$PROJECT_DIR$/acme/Helpers/AvatarCreator.php" />
       </list>
     </option>
   </component>
@@ -208,7 +212,57 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unit" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="acme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="acme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Helpers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,22 +277,22 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="register.b&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/resources/views/auth/register.blade.php&#10;Register&#9;null&#9;null&#10;View/profile/pass&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/resources/views/profile/form/_password.blade.php&#10;Pro&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/app/Profile.php&#10;Profile&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/tests/Feature/ProfileTest.php&#10;Prof&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/database/factories/ProfileFactory.php&#10;profileC&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/app/Http/Controllers/ProfileController.php&#10;Profi&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/app/Profile.php&#10;create_prot&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;create_pr&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;checs&#9;null&#9;null&#10;we&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;ProfileContr&#9;null&#9;null&#10;c&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/CommunsController.php&#10;comm&#9;ACTION&#9;CheckinProject&#10;wen&#9;null&#9;null&#10;ProfileFa&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/factories/ProfileFactory.php&#10;ProfileTe&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Unit/ProfileTest.php&#10;UserFa&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/factories/UserFactory.php&#10;ImageTe&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Feature/ImageUploadTest.php&#10;fileS&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;create&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;ProfileF&#9;null&#9;null&#10;User&#9;null&#9;null&#10;create_user&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/migrations/2014_10_12_000000_create_users_table.php&#10;Image&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Feature/ImageUploadTest.php&#10;filesystems&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;conf/f&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;config/file&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;filesy&#9;null&#9;null&#10;routes/we&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;Commun&#9;null&#9;null&#10;reg&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/auth/register.blade.php&#10;register&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/auth/register.blade.php&#10;profile/i&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/profile/index.blade.php&#10;index&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/users/index.blade.php&#10;ProfileCo&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/ProfileController.php&#10;AuditController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/Audit/AuditController.php&#10;RolesController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/RolesController.php&#10;UsersController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/UsersController.php&#10;HomeController&#9;null&#9;null&#10;web&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;user&#9;null&#9;null&#10;UserContr&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/UsersController.php&#10;RolesTe&#9;null&#9;null&#10;RolesCon&#9;null&#9;null&#10;admin&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/layouts/admin.blade.php&#10;UserTes&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/tests/Feature/UsersTest.php&#10;UserDa&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/acme/Http/Controllers/UserDataTableController.php&#10;UsersCo&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/app/Http/Controllers/UsersController.php" />
+    <property name="SearchEverywhereHistoryKey" value="reg&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/app/Http/Controllers/Auth/RegisterController.php&#10;register&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/resources/views/auth/register.blade.php&#10;compos&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/composer.json&#10;Profi&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/database/factories/ProfileFactory.php&#10;register.b&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/resources/views/auth/register.blade.php&#10;Register&#9;null&#9;null&#10;View/profile/pass&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/resources/views/profile/form/_password.blade.php&#10;Pro&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/app/Profile.php&#10;Profile&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/tests/Feature/ProfileTest.php&#10;Prof&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/database/factories/ProfileFactory.php&#10;profileC&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/app/Http/Controllers/ProfileController.php&#10;create_prot&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;create_pr&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;checs&#9;null&#9;null&#10;we&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;ProfileContr&#9;null&#9;null&#10;c&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/CommunsController.php&#10;comm&#9;ACTION&#9;CheckinProject&#10;wen&#9;null&#9;null&#10;ProfileFa&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/factories/ProfileFactory.php&#10;ProfileTe&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Unit/ProfileTest.php&#10;UserFa&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/factories/UserFactory.php&#10;ImageTe&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Feature/ImageUploadTest.php&#10;fileS&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;create&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/migrations/2020_08_18_005708_create_profiles_table.php&#10;ProfileF&#9;null&#9;null&#10;User&#9;null&#9;null&#10;create_user&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/database/migrations/2014_10_12_000000_create_users_table.php&#10;Image&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/tests/Feature/ImageUploadTest.php&#10;filesystems&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;conf/f&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;config/file&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/config/filesystems.php&#10;filesy&#9;null&#9;null&#10;routes/we&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;Commun&#9;null&#9;null&#10;profile/i&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/profile/index.blade.php&#10;index&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/users/index.blade.php&#10;ProfileCo&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/ProfileController.php&#10;AuditController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/Audit/AuditController.php&#10;RolesController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/RolesController.php&#10;UsersController&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/UsersController.php&#10;HomeController&#9;null&#9;null&#10;web&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/routes/web.php&#10;user&#9;null&#9;null&#10;UserContr&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/app/Http/Controllers/UsersController.php&#10;RolesTe&#9;null&#9;null&#10;RolesCon&#9;null&#9;null&#10;admin&#9;FILE&#9;file:///home/gerardo/Proyectos/buttery/backend/src/resources/views/layouts/admin.blade.php&#10;UserTes&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/tests/Feature/UsersTest.php&#10;UserDa&#9;FILE&#9;file:///home/gerardo/Proyectos/app/backend/src/acme/Http/Controllers/UserDataTableController.php" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documentos/countries-states-cities-database-master/csv/nicaragua_cities.csv" />
     <property name="database.data.extractors.current" value="Comma-separated (CSV)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/storage/app" />
+      <recent name="$PROJECT_DIR$/Jenkins/nexmo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/php" />
       <recent name="$PROJECT_DIR$/src/resources/js/js/Users" />
       <recent name="$PROJECT_DIR$/src/resources/views" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/storage/app" />
-      <recent name="$PROJECT_DIR$/Jenkins/nexmo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -361,21 +415,7 @@
       <workItem from="1597680623589" duration="84957000" />
       <workItem from="1598277196270" duration="52598000" />
       <workItem from="1598668528350" duration="2570000" />
-      <workItem from="1598795452773" duration="12334000" />
-    </task>
-    <task id="LOCAL-00053" summary="fix Cambio de estado por usuario">
-      <created>1597463354244</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1597463354245</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Agregando Flash message">
-      <created>1597464414987</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1597464414987</updated>
+      <workItem from="1598795452773" duration="16025000" />
     </task>
     <task id="LOCAL-00055" summary="agregando errores de validacion a formulario">
       <created>1597465021592</created>
@@ -706,17 +746,32 @@
       <option name="project" value="LOCAL" />
       <updated>1598810139710</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="[Green] refactory ProfileControllerHelper">
+      <created>1598810555696</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1598810555696</updated>
+    </task>
+    <task id="LOCAL-00103" summary="[Green] refactory ProfileControllerHelper [2]">
+      <created>1598810896098</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1598810896098</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277795000" />
+    <option name="totallyTimeSpent" value="281486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="27" width="1839" height="1026" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17439911" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48314607" sideWeight="0.50303954" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1783119" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -726,7 +781,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -768,8 +822,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Agregando Base de datos de paises" />
-    <MESSAGE value="fix en base de datos" />
     <MESSAGE value="removiendo roles en registro" />
     <MESSAGE value="Agregando code_country a formulario de registro" />
     <MESSAGE value="Agregando por defecto permisos a rol suscriber" />
@@ -793,7 +845,9 @@
     <MESSAGE value="[green] Configurando formulario de redes sociales" />
     <MESSAGE value="refactory _password.blade con valores correctos para confirmación" />
     <MESSAGE value="[Green] Edicion de password" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Green] Edicion de password" />
+    <MESSAGE value="[Green] refactory ProfileControllerHelper" />
+    <MESSAGE value="[Green] refactory ProfileControllerHelper [2]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Green] refactory ProfileControllerHelper [2]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -802,61 +856,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ProfileController.php" />
-    <entry file="file://$PROJECT_DIR$/src/database/migrations/2020_08_18_005708_create_profiles_table.php" />
-    <entry file="file://$PROJECT_DIR$/src/tests/Feature/ProfileTest.php" />
-    <entry file="file://$PROJECT_DIR$/src/tests/Feature/UsersTest.php" />
-    <entry file="file://$PROJECT_DIR$/src/tests/Feature/LoginTest.php" />
-    <entry file="uml://DATABASE/b32d3a32-0a6d-40f8-87e7-179a18ea495a.SCHEMA:homestead">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>b32d3a32-0a6d-40f8-87e7-179a18ea495a.SCHEMA:homestead</OriginalElement>
-          <nodes>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.model_has_permissions</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_personal_access_clients</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.countries</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_refresh_tokens</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.failed_jobs</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.model_has_roles</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.roles</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_auth_codes</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_clients</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.role_has_permissions</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.audits</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.migrations</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.users</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.states</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.password_resets</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.cities</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.profiles</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.permissions</node>
-            <node x="" y="">b32d3a32-0a6d-40f8-87e7-179a18ea495a.TABLE:homestead.oauth_access_tokens</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8792865362485612" x="335.0" y="350.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8819d51d/b32d3a32-0a6d-40f8-87e7-179a18ea495a/homestead.users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/cities_2020_08_25_16_40_05.txt" />
     <entry file="file://$PROJECT_DIR$/src/database/seeds/StatesTableSeeder.php" />
     <entry file="file://$USER_HOME$/cities_2020_08_25_16_42_34.txt" />
@@ -897,13 +896,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/_form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -989,14 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="312" column="93" lean-forward="true" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommunsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -1045,26 +1029,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acme/Http/Controllers/GeneralInfoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ProfileFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1077,32 +1045,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_password.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="63" column="47" lean-forward="false" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+        <state relative-caret-position="400">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="31" column="71" lean-forward="true" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
           <folding>
-            <marker date="1598797623344" expanded="true" signature="1587:1702" ph="..." />
-            <marker date="1598797623344" expanded="true" signature="1587:1703" ph="..." />
-            <marker date="1598797623344" expanded="true" signature="1601:1701" ph="..." />
-            <marker date="1598797623344" expanded="true" signature="1897:2005" ph="..." />
-            <marker date="1598797623344" expanded="true" signature="1911:2003" ph="..." />
+            <element signature="e#40#81#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/ProfileTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="325" column="0" lean-forward="true" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="312" column="93" lean-forward="true" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/ProfileFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/_profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_password.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="211">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1115,29 +1119,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ProfileTest.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="325" column="0" lean-forward="true" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/form/_general_info.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <marker date="1598811570601" expanded="true" signature="1646:1787" ph="..." />
+            <marker date="1598811570601" expanded="true" signature="1646:1788" ph="..." />
+            <marker date="1598811570601" expanded="true" signature="1660:1786" ph="..." />
+            <marker date="1598811570601" expanded="true" signature="1982:2113" ph="..." />
+            <marker date="1598811570601" expanded="true" signature="1996:2111" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/_form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Acme/Helpers/AvatarCreatorHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/acme/Helpers/ProfileControllerHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="80">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
+    <entry file="file://$PROJECT_DIR$/acme/Helpers/AvatarCreator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#81#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acme/Helpers/StoreFilesHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/AvatarCreatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
