@@ -1,6 +1,10 @@
 <div class="card">
     <div class="image p-1" style="width:50%;">
-        <img src="{{ Avatar::create(auth()->user()->email)->toBase64() }}" class="card-img-top" alt="img">
+        @if(!isset($user->profile->avatar))
+            <img src="{{ Avatar::create(auth()->user()->email)->toBase64() }}" class="card-img-top" alt="img">
+        @else
+            <img src="{{ $user->profile->avatar }}" class="card-img-top rounded" alt="img">
+        @endif
     </div>
 
     <div class="card-body">
