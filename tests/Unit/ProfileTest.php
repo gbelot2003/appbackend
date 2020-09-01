@@ -37,11 +37,9 @@ class ProfileTest extends TestCase
         );
 
         // La cadena que buscamos
-        $path = "/storage/app/public/profiles/$name";
+        $path = "/storage/app/$name";
 
         // Aseguramos que la cadena es igual a la salida del modelo
         $this->assertEquals($user->profile->avatarPath(), $path);
     }
-
-
 }

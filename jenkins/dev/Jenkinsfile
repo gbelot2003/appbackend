@@ -32,6 +32,11 @@ pipeline{
                 
             }
         }
+        stage("Agregando link a la carpeta de disco storage"){
+            steps{
+                sh "cd public && ln -s ../storage/ ./storage"
+            }
+        }
         stage("Migrando y Seeding Tablas"){
             steps{
                 sh "docker-compose exec -T php php artisan migrate:refresh --seed"
