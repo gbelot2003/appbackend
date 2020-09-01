@@ -16,22 +16,24 @@
 
 @import "~select2/dist/css/select2.css";
 
+@import "~bootstrap-vue/dist/bootstrap-vue.css";
+
 .invalid-feedback {
-  display: block;
+    display: block;
 }
 
 .form-control-user {
-  font-size: .8rem;
-  border-radius: 10rem;
-  padding: 1.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 10rem;
+    padding: 1.5rem 1rem;
 }
 
 .btn-user {
-  font-size: .8rem;
-  border-radius: 10rem;
-  padding: .75rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 10rem;
+    padding: 0.75rem 1rem;
 }
 
 .select2-container {
-  width: 100% !important;
+    width: 100% !important;
 }

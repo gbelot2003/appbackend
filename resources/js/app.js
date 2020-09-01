@@ -12,20 +12,12 @@ require('./js');
 
 window.Vue = require('vue');
 
+import BootstrapVue from 'bootstrap-vue'
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+Vue.use(BootstrapVue);
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('images', require('./components/Images.vue').default);
+Vue.component('images', require('./components/profiles/Images.vue').default);
+Vue.component('general', require('./components/profiles/General.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
