@@ -36,7 +36,9 @@ class CommunsController extends Controller
         $name = $upload->storeAvatarIn('profiles');
 
         // Guardamos en profile User
-        auth()->user()->profile->avatar = ($name);
+        auth()->user()->profile->update([
+            'avatar' => $name
+        ]);
 
         $response = (string) auth()->user()->profile->avatarPath();
         // respondemos

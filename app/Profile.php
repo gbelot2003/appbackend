@@ -27,6 +27,6 @@ class Profile extends Model
      */
     public function avatarPath()
     {
-        return "/storage/app/public/profiles/{$this->avatar}";
+        return "/storage/app/profiles/{$this->avatar}";
     }
 }

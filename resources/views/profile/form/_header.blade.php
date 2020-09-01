@@ -1,7 +1,7 @@
 <div class="col-12 col-sm-auto mb-3">
     <div class="mx-auto" style="width: 140px;">
         <div class="d-flex justify-content-center align-items-center rounded" style="height: 140px; background-color: rgb(233, 236, 239);">
-            <img class="img-profile rounded-circle" src="">
+            <img class="img-profile rounded-circle" src="{{ auth()->user()->profile->avatarPath() }}">
         </div>
     </div>
 </div>
@@ -10,10 +10,7 @@
     <div class="text-center text-sm-left mb-2 mb-sm-0">
         <div class="text-muted">
         </div><div class="mt-2">
-            <input type="file" id="my_file" style="display: none;" />
-            <button class="btn btn-primary" type="button">
-                <i class="fa fa-fw fa-camera"></i>
-                <span>{{ __('Change Photo') }}</span> </button>
+            <images></images>
         </div>
     </div>
 </div>

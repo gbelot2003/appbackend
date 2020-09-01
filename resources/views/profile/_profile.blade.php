@@ -3,7 +3,7 @@
         @if(!isset($user->profile->avatar))
             <img src="{{ Avatar::create(auth()->user()->email)->toBase64() }}" class="card-img-top" alt="img">
         @else
-            <img src="{{ $user->profile->avatar }}" class="card-img-top rounded" alt="img">
+            <img src="{{ $user->profile->avatarPath() }}" class="card-img-top rounded" alt="img">
         @endif
     </div>
 

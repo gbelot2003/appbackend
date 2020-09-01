@@ -4,7 +4,7 @@
         @if(!isset(auth()->user()->profile->avatar))
             <img class="img-profile rounded-circle" src="{{ Avatar::create(auth()->user()->email)->toBase64() }}">
         @else
-            <img src="{{ $user->profile->avatar }}" class="img-profile rounded-circle" alt="img">
+            <img src="{{ auth()->user()->profile->avatarPath() }}" class="img-profile rounded-circle" alt="img">
         @endif
     </a>
     <!-- Dropdown - User Information -->
