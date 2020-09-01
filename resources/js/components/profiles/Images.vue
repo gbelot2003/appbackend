@@ -115,7 +115,7 @@ export default {
     },
     computed: {
         showImage() {
-            return `http://localhost${this.file}`;
+            return `${this.file}`;
         }
     }
 };
