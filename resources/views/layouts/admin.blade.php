@@ -16,11 +16,12 @@
             <!-- Main Content -->
             <div id="content">
 
+
                 @include('layouts.admin.topbar')
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                    @include('layouts.admin.toast')
                     <!-- Page Heading -->
                     @include('layouts.admin.heading', ['title'])
 
@@ -37,16 +38,18 @@
 
             @include('layouts.admin.footer')
 
-        </div>
-        <!-- End of Content Wrapper -->
+            <!-- Flexbox container for aligning the toasts -->
 
+        </div>
     </div>
+    <!-- End of Content Wrapper -->
 
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
 
     <!-- Logout Modal-->
     @include('layouts.admin.logout')
