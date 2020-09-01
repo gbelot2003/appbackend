@@ -10,8 +10,10 @@ class Profile extends Model
     /**
      * @var array
      */
-    protected $fillable = ['user_id', 'avatar', 'alias', 'about', 'field_facebook', 'field_instagram',
-                            'field_twitter', 'field_linkedin'];
+    protected $fillable = [
+        'user_id', 'avatar', 'alias', 'about', 'field_facebook', 'field_instagram',
+        'field_twitter', 'field_linkedin'
+    ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -27,6 +29,6 @@ class Profile extends Model
      */
     public function avatarPath()
     {
-        return "/storage/app/profiles/{$this->avatar}";
+        return "/storage/app/{$this->avatar}";
     }
 }

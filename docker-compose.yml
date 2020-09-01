@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 networks:
   laravel:
@@ -9,7 +9,7 @@ services:
     volumes:
       - ./:/var/www/html
     ports:
-      - '80:80'
+      - "80:80"
     depends_on:
       - php
       - mysql
@@ -19,11 +19,11 @@ services:
       - laravel
 
   php:
-    image: gbelot2003/docker-laravel_php_1:latest
+    image: gbelot2003/docker-laravel_php_1:v3
     volumes:
       - ./:/var/www/html
     ports:
-      - '9000:9000'
+      - "9000:9000"
     networks:
       - laravel
 
@@ -32,7 +32,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - '3306:3306'
+      - "3306:3306"
     environment:
       MYSQL_DATABASE: homestead
       MYSQL_USER: homestead
@@ -68,7 +68,7 @@ services:
     volumes:
       - ./:/var/www/html
     working_dir: /var/www/html
-    entrypoint: ['npm']
+    entrypoint: ["npm"]
 
   app:
     image: phpmyadmin/phpmyadmin
