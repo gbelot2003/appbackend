@@ -91,7 +91,7 @@
         border-top: 16px solid #3498db;
         /* Blue */
         border-radius: 50%;
-        animation: spin 3s linear infinite;
+        animation: spin 1s linear infinite;
     }
 
     .cloak-fade:not([v-cloak]) {
