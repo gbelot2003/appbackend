@@ -34,7 +34,14 @@ pipeline{
         }
         stage("Agregando link a la carpeta de disco storage"){
             steps{
-                sh "cd public && ln -s ../storage/ ./storage"
+                script {
+                    if(fileExists('./public/storage')){
+                        echo "========Procesos activos, el archivo Existe========"
+                    } else {
+                        sh "cd public && ln -s ../storage/ ./storage"
+                    }
+                }
+                
             }
         }
         stage("Migrando y Seeding Tablas"){
