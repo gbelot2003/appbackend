@@ -1,5 +1,5 @@
 <template>
-    <div class="images row" v-cloak>
+    <div class="images row">
         <div class="col-12 col-sm-auto mb-3">
             <div class="mx-auto" style="width: 140px;">
                 <div

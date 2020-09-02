@@ -1,13 +1,15 @@
 <general inline-template :user="{{ $user }}" :countries="{{ $countries }}" :cities="{{ $cities }}" v-cloak>
     <fieldset>
         <legend>{{ __('General Information') }}</legend>
+
         <div class="row">
             <images image="{{ auth()->user()->profile->avatarPath() }}"></images>
         </div>
+
         <div class="dropdown-divider"></div>
+
         <b-form @submit="onSubmit">
             <div class="row">
-
                 <div class="col-md-6">
                     <div class="form-group text-left">
                         <label for="name">{{ __('Name') }}</label>
@@ -70,3 +72,36 @@
         </b-form>
     </fieldset>
 </general>
+
+<style>
+    [v-cloak]>* {
+        display: none;
+    }
+
+    [v-cloak]::before {
+        position: relative;
+        top: 10%;
+        left: 35%;
+        content: "";
+        display: block;
+        width: 150px;
+        height: 150px;
+        border: 16px solid #f3f3f3;
+        /* Light grey */
+        border-top: 16px solid #3498db;
+        /* Blue */
+        border-radius: 50%;
+        animation: spin 3s linear infinite;
+    }
+
+    .cloak-fade:not([v-cloak]) {
+        opacity: 0;
+        -webkit-animation-name: cloak-fade-in;
+        animation-name: cloak-fade-in;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+</style>
