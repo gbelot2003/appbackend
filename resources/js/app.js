@@ -18,6 +18,7 @@ Vue.use(BootstrapVue);
 
 Vue.component('images', require('./components/profiles/Images.vue').default);
 Vue.component('general', require('./components/profiles/General.vue').default);
+Vue.component('social', require('./components/profiles/Social.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -66,42 +66,9 @@
                 </div>
 
                 <div class="col-md-12 text-left">
-                    <button type="submit" class="btn-primary btn">{{ __('Update') }}</button>
+                    <button type="submit" class="btn-primary btn"><i class="fas fa-edit"></i> {{ __('Update') }}</button>
                 </div>
             </div>
         </b-form>
     </fieldset>
 </general>
-
-<style>
-    [v-cloak]>* {
-        display: none;
-    }
-
-    [v-cloak]::before {
-        position: relative;
-        top: 10%;
-        left: 35%;
-        content: "";
-        display: block;
-        width: 150px;
-        height: 150px;
-        border: 16px solid #f3f3f3;
-        /* Light grey */
-        border-top: 16px solid #3498db;
-        /* Blue */
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-    }
-
-    .cloak-fade:not([v-cloak]) {
-        opacity: 0;
-        -webkit-animation-name: cloak-fade-in;
-        animation-name: cloak-fade-in;
-        -webkit-animation-duration: .5s;
-        animation-duration: .5s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-    }
-
-</style>
