@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-left">
-                    <button type="submit" class="btn-primary btn">{{ __('Update Social Networls') }}</button>
+                    <button type="submit" class="btn-primary btn"><i class="fas fa-edit"></i> {{ __('Update Social Networls') }}</button>
                 </div>
             </div>
         </b-form>
