@@ -29,7 +29,7 @@
                     />
                     <button
                         v-if="hidden"
-                        class="btn btn-primary"
+                        class="btn btn-info"
                         @click="$refs.fileInput.click()"
                     >
                         <i class="fa fa-fw fa-camera"></i>
