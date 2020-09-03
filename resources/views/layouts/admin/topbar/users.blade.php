@@ -17,7 +17,7 @@
         @endcan
 
         @can('ver_settings')
-        <a class="dropdown-item" href="#">
+        <a class="dropdown-item" href="/settings">
             <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
             Settings
         </a>

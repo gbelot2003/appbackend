@@ -28,6 +28,7 @@ Route::group(['middleware' => 'auth', 'verified'], function () {
 
         //Edit own profile
         Route::put('/profile', 'ProfileController@update');
+
         Route::get('/profile/edit', 'ProfileController@edit');
 
         Route::post('avatar/upload', 'CommunsController@upload_avatar');
@@ -39,5 +40,7 @@ Route::group(['middleware' => 'auth', 'verified'], function () {
         Route::resource('roles', 'RolesController');
 
         Route::get('/audits', 'Audit\AuditController@index');
+
+        Route::get('/settings', 'SettingsController@index');
     });
 });

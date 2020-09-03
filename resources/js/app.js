@@ -16,6 +16,11 @@ import BootstrapVue from 'bootstrap-vue';
 
 Vue.use(BootstrapVue);
 
+Vue.component('authorized', require('./components/passport/AuthorizedClients.vue').default);
+Vue.component('clients', require('./components/passport/Clients.vue').default);
+Vue.component('personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue').default);
+
+
 Vue.component('images', require('./components/profiles/Images.vue').default);
 Vue.component('general', require('./components/profiles/General.vue').default);
 Vue.component('social', require('./components/profiles/Social.vue').default);
