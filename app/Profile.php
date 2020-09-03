@@ -17,7 +17,7 @@ class Profile extends Model implements Auditable
     protected $fillable = [
         'user_id', 'avatar', 'alias', 'about', 'field_facebook', 'field_instagram',
         'field_twitter', 'field_linkedin', 'share_profile', 'share_name', 'share_about',
-        'share_email', 'share_phone'
+        'share_email', 'share_phone', 'country_id', 'city_id'
     ];
 
     protected $cast = [

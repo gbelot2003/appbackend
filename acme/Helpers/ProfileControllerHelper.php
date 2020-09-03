@@ -23,7 +23,8 @@ class ProfileControllerHelper
         if (
             $request->has('name') || $request->has('email') ||
             $request->has('phonefield') || $request->has('alias') ||
-            $request->has('about')
+            $request->has('about') || $request->has('country_id') ||
+            $request->has('city_id')
         ) {
 
             $this->UpdateGeneralInfo($request);
@@ -125,8 +126,8 @@ class ProfileControllerHelper
                 'phonefield'    => 'required',
                 'alias'         => 'nullable|string',
                 'about'         => 'nullable|string',
-                'country_id'    => 'integer|required',
-                'city_id'       => 'integer|required'
+                'country_id'    => 'required',
+                'city_id'       => 'required'
             ]
         );
     }

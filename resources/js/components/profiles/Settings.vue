@@ -17,21 +17,35 @@ export default {
     },
     methods: {
         UpdateProperty() {
-            axios.put("/profile", this.prof).then(resp => {
-                console.log(resp);
-                $(".toast-body").html(
-                    "The permission on Social Media has been updated"
-                );
-                $(".toast").toast({
-                    type: "success",
-                    delay: 3000
-                });
+            axios
+                .put("/profile", this.prof)
+                .then(resp => {
+                    console.log(resp);
+                    $(".toast-body").html(
+                        "The permission on Social Media has been updated"
+                    );
+                    $(".toast").toast({
+                        type: "success",
+                        delay: 3000
+                    });
 
-                $(".toast")
-                    .toast("show")
-                    .removeClass("bg-danger")
-                    .addClass("bg-success");
-            });
+                    $(".toast")
+                        .toast("show")
+                        .removeClass("bg-danger")
+                        .addClass("bg-success");
+                })
+                .catch(err => {
+                    $(".toast-body").html("There is an error on update!!");
+                    $(".toast")
+                        .toast({
+                            type: "info",
+                            delay: 3000
+                        })
+                        .toast("show")
+                        .removeClass("bg-success")
+                        .addClass("bg-danger");
+                    this.edit = false;
+                });
         },
 
         toData(val) {
