@@ -20,6 +20,7 @@ Vue.component('images', require('./components/profiles/Images.vue').default);
 Vue.component('general', require('./components/profiles/General.vue').default);
 Vue.component('social', require('./components/profiles/Social.vue').default);
 Vue.component('password', require('./components/profiles/Password.vue').default);
+Vue.component('settings', require('./components/profiles/Settings.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

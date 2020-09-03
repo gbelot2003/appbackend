@@ -28,7 +28,7 @@ class CreateProfilesTable extends Migration
             $table->string('field_linkedin')->nullable();
             $table->boolean('share_profile')->default(1);
             $table->boolean('share_name')->default(0);
-            $table->boolean('share_about')->default(0);
+            $table->boolean('share_about')->default(1);
             $table->boolean('share_email')->default(1);
             $table->boolean('share_phone')->default(0);
             $table->timestamps();

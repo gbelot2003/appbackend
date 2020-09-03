@@ -4,9 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use phpDocumentor\Reflection\Types\Boolean;
+use OwenIt\Auditing\Contracts\Auditable;
 
-class Profile extends Model
+class Profile extends Model implements Auditable
 {
+
+    use \OwenIt\Auditing\Auditable;
 
     /**
      * @var array
@@ -19,18 +22,26 @@ class Profile extends Model
 
     protected $cast = [
         'share_profile' => 'boolean',
-        'share_name' => 'boolean',
-        'share_about' => 'boolean',
-        'share_email' => 'boolean',
-        'share_phone' => 'boolean'
+        'share_name'    => 'boolean',
+        'share_about'   => 'boolean',
+        'share_email'   => 'boolean',
+        'share_phone'   => 'boolean'
     ];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * 
      */
-    public function user()
+    public function setShareProfileAttribute($value)
     {
-        return $this->belongsTo(User::class);
+        $this->attributes['share_profile'] = boolval($value);
+    }
+
+    /**
+     * 
+     */
+    public function setShareNameAttribute($value)
+    {
+        $this->attributes['share_name'] = boolval($value);
     }
 
     /**

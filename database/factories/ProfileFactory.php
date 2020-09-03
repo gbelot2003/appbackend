@@ -23,8 +23,8 @@ $factory->define(Profile::class, function (Faker $faker) {
         'field_twitter'     => $faker->url,
         'field_linkedin'    => $faker->url,
         'share_profile'     => 1,
-        'share_name'        => 0,
-        'share_about'       => 0,
+        'share_name'        => 1,
+        'share_about'       => 1,
         'share_email'       => 1,
         'share_phone'       => 0
     ];

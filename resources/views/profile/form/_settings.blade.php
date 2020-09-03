@@ -1,53 +1,42 @@
-<fieldset >
+<fieldset>
     <legend>{{ __('Profile Settings') }}</legend>
-    <div class="row text-left mb-3">
+    <settings inline-template v-cloak :profile="{{ auth()->user()->profile }}">
+        <div class="row text-left mb-3">
 
-        <div class="col-md-4">
-            <div>Show My Profile</div>
-            <input class="showProfile" name="showProfile" type="checkbox"
-                   data-on="Active"
-                   data-off="Inactive"
-                   data-toggle="toggle" data-width="100">
+            <div class="col-md-4">
+                <b-form-checkbox v-model="prof.share_profile" value="1" unchecked-value="0" name="check-button" @change="UpdateProperty" switch>
+                    Share My Profile
+                </b-form-checkbox>
+            </div>
+
+
+            <div class="col-md-4">
+                <b-form-checkbox v-model="prof.share_name" value="1" unchecked-value="0" name="check-button" @change="UpdateProperty" switch>
+                    Share Name <br><small class="text-muted">(if not, alias will be share)</small>
+                </b-form-checkbox>
+            </div>
+
+            <div class="col-md-4">
+                <b-form-checkbox v-model="prof.share_email" value="1" unchecked-value="0" name="check-button" @change="UpdateProperty" switch>
+                    Share e-mail
+                </b-form-checkbox>
+            </div>
+
+
+            <div class="col-md-4">
+                <b-form-checkbox v-model="prof.share_phone" value="1" unchecked-value="0" name="check-button" @change="UpdateProperty" switch>
+                    Share Telephone
+                </b-form-checkbox>
+            </div>
+
+            <div class="col-md-4">
+                <b-form-checkbox v-model="prof.share_about" value="1" unchecked-value="0" name="check-button" @change="UpdateProperty" switch>
+                    Share About Me
+                </b-form-checkbox>
+            </div>
         </div>
 
-
-        <div class="col-md-4">
-            <div>Show Name or Alias</div>
-            <input class="showProfile" name="showProfile" type="checkbox"
-                   data-on="Active"
-                   data-off="Inactive"
-                   data-toggle="toggle" data-width="100">
-        </div>
-
-        <div class="col-md-4">
-            <div>Show About Me</div>
-            <input class="showProfile" name="showProfile" type="checkbox"
-                   data-on="Active"
-                   data-off="Inactive"
-                   data-toggle="toggle" data-width="100">
-        </div>
-
-    </div>
-
-    <div class="row text-left mb-3">
-
-        <div class="col-md-4">
-            <div>Show e-mail</div>
-            <input class="showProfile" name="showProfile" type="checkbox"
-                   data-on="Active"
-                   data-off="Inactive"
-                   data-toggle="toggle" data-width="100">
-        </div>
-
-        <div class="col-md-4">
-            <div>Show Telephone</div>
-            <input class="showProfile" name="showProfile" type="checkbox"
-                   data-on="Active"
-                   data-off="Inactive"
-                   data-toggle="toggle" data-width="100">
-        </div>
-    </div>
-
+    </settings>
 
     <div class="dropdown-divider"></div>
 </fieldset>
