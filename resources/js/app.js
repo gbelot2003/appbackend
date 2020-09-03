@@ -12,7 +12,7 @@ require('./js');
 
 window.Vue = require('vue');
 
-import BootstrapVue from 'bootstrap-vue'
+import BootstrapVue from 'bootstrap-vue';
 
 Vue.use(BootstrapVue);
 

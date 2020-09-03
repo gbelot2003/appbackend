@@ -6,6 +6,8 @@ export default {
     props: ["profile"],
     data() {
         return {
+            active: this.profile.share_profile,
+            datos: {},
             prof: {
                 share_profile: this.profile.share_profile,
                 share_name: this.profile.share_name,
@@ -16,6 +18,58 @@ export default {
         };
     },
     methods: {
+        shareProperties(val){
+            if (val == 1){
+                this.datos = {
+                    share_profile: 1,
+                    share_name: 0,
+                    share_about: 0,
+                    share_email: 0,
+                    share_phone: 0
+                };
+                this.active = 1;
+            } else {
+                this.datos = {
+                    share_profile: 0,
+                    share_name: 0,
+                    share_about: 0,
+                    share_email: 0,
+                    share_phone: 0
+                };
+                this.active = 0;
+            }
+
+            axios
+                .put("/profile", this.datos)
+                .then(resp => {
+                    $(".toast-body").html(
+                        "The permission on Social Media has been updated"
+                    );
+                    $(".toast").toast({
+                        type: "success",
+                        delay: 3000
+                    });
+
+                    $(".toast")
+                        .toast("show")
+                        .removeClass("bg-danger")
+                        .addClass("bg-success");
+                })
+                .catch(err => {
+                    $(".toast-body").html("There is an error on update!!");
+                    $(".toast")
+                        .toast({
+                            type: "info",
+                            delay: 3000
+                        })
+                        .toast("show")
+                        .removeClass("bg-success")
+                        .addClass("bg-danger");
+                    this.edit = false;
+                });
+
+        },
+
         UpdateProperty() {
             axios
                 .put("/profile", this.prof)
