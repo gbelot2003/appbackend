@@ -8,6 +8,7 @@ export default {
         return {
             active: this.profile.share_profile,
             datos: {},
+            message: '',
             prof: {
                 share_profile: this.profile.share_profile,
                 share_name: this.profile.share_name,
@@ -28,6 +29,7 @@ export default {
                     share_phone: 0
                 };
                 this.active = 1;
+                this.message = "Profile has been updated, Other properties has been release"
             } else {
                 this.datos = {
                     share_profile: 0,
@@ -37,13 +39,14 @@ export default {
                     share_phone: 0
                 };
                 this.active = 0;
+                this.message = "Profile has been updated, Other properties has been locked!!"
             }
 
             axios
                 .put("/profile", this.datos)
                 .then(resp => {
                     $(".toast-body").html(
-                        "The permission on Social Media has been updated"
+                        this.message
                     );
                     $(".toast").toast({
                         type: "success",
