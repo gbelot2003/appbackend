@@ -73,7 +73,8 @@ export default {
 
         },
 
-        UpdateProperty() {
+        UpdateProperty(val) {
+
             axios
                 .put("/profile", this.prof)
                 .then(resp => {

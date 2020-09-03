@@ -8,19 +8,37 @@
     </div>
 
     <div class="card-body">
-        <h5 class="card-title">{{ $user->name }}</h5>
+        @if(auth()->user()->profile->share_name)
+            <h5 id="profile_name" class="card-title text-danger">{{ $user->name }} </h5>
+        @else
+            <h5 id="profile_name" class="card-title">{{ $user->profile->alias }}</h5>
+        @endif
+
         <p class="text-muted">{{ $user->roles[0]->name }}</p>
         <small>{{ __('About Me') }}</small>
-        <p class="card-text">{{ $user->profile->about }}</p>
+            @if(auth()->user()->profile->share_about)
+                <p class="card-text text-danger">{{ $user->profile->about }}</p>
+            @else
+                <p class="card-text">{{ $user->profile->about }}</p>
+            @endif
     </div>
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <small>{{ __('E-mail') }}</small>
-            <p>{{ $user->email }}</p>
+            @if(auth()->user()->profile->share_email)
+                <p class="text-danger">{{ $user->email }}</p>
+            @else
+                <p>{{ $user->email }}</p>
+            @endif
+
         </li>
         <li class="list-group-item">
             <small>{{ __('Telephone') }}</small>
-            <p>{{ $user->phonefield }}</p></li>
+            @if(auth()->user()->profile->share_phone)
+                <p class="text-danger">{{ $user->phonefield }}</p></li>
+            @else
+                <p>{{ $user->phonefield }}</p></li>
+            @endif
         <li class="list-group-item">
             <small>{{ __('Alias') }}</small>
             <p>{{ $user->profile->alias }}</p>

@@ -4,15 +4,17 @@
         <div class="row text-left mb-3">
 
             <div class="col-md-4">
-                <b-form-checkbox v-model="prof.share_profile" value="1" unchecked-value="0" name="check-button" @change="shareProperties" switch>
+                <b-form-checkbox v-model="prof.share_profile" value="1" unchecked-value="0" name="check-button"
+                                 @change="shareProperties" switch>
                     Share My Profile
                 </b-form-checkbox>
             </div>
 
 
             <div class="col-md-4">
-                <b-form-checkbox :disabled="!active" v-model="prof.share_name" value="1" unchecked-value="0" name="check-button" @change="UpdateProperty" switch>
-                    Share Name <br><small class="text-muted">(if not, alias will be share)</small>
+                <b-form-checkbox :disabled="!active" v-model="prof.share_name" value="1" unchecked-value="0" name="check-button"
+                                 @change="UpdateProperty('share_name')" switch>
+                    Share Name <br><small class="text-muted">(if not, alias will be display)</small>
                 </b-form-checkbox>
             </div>
 
