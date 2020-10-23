@@ -49,7 +49,4 @@ class ProfileController extends Controller
         $update = new ProfileControllerHelper();
         $update->updating($request);
     }
-
-
-
 }
